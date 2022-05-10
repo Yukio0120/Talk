@@ -5,16 +5,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.fragments.EnterPhoneNumberFragment">
+    <TextView
+        android:id="@+id/register_text_enter_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register_text_enter_phone"
+        android:textStyle="bold"
+        android:textSize="@dimen/normalText"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginTop="130dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/register_text_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/smallText"
+        android:text="@string/register_text_phone"
+        android:layout_margin="@dimen/app_small_margin"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/register_text_enter_phone"/>
 
     <EditText
         android:id="@+id/register_input_phone_number"
+        style="@style/editText"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:autofillHints=""
+        android:gravity="center"
+        android:hint="@string/register_hint_default_phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="LabelFor"
-        style="@style/editText"
-        android:hint="@string/register_hint_default_phone"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/register_text_phone"
+        tools:ignore="LabelFor" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/register_btn_next"

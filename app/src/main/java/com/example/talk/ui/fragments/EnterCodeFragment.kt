@@ -38,7 +38,7 @@ class EnterCodeFragment(private val phoneNumber: String, val id: String) :
                     .addOnSuccessListener {
                         REF_DATABASE_ROOT.child(NODE_USERS).child(uid).updateChildren(dateMap)
                             .addOnSuccessListener {
-                                showToast("Добро пожаловать")
+
                                 APP_ACTIVITY.replaceActivity(MainActivity())
                             }
                             .addOnFailureListener { showToast(it.message.toString()) }

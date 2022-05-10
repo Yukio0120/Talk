@@ -1,9 +1,9 @@
 package com.example.talk.ui.fragments
 
-import android.os.Bundle
-import android.view.*
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import androidx.fragment.app.Fragment
-import com.example.talk.MainActivity
 import com.example.talk.R
 import com.example.talk.utilits.APP_ACTIVITY
 import com.example.talk.utilits.hideKeyboard

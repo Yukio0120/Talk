@@ -68,45 +68,25 @@ class AppDrawer() {
                     .withName("Создать группу")
                     .withSelectable(false)
                     .withIcon(R.drawable.ic_menu_create_groups),
-                PrimaryDrawerItem().withIdentifier(101)
-                    .withIconTintingEnabled(true)
-                    .withName("Создать секретный чат")
-                    .withSelectable(false)
-                    .withIcon(R.drawable.ic_menu_secret_chat),
-                PrimaryDrawerItem().withIdentifier(102)
-                    .withIconTintingEnabled(true)
-                    .withName("Создать канал")
-                    .withSelectable(false)
-                    .withIcon(R.drawable.ic_menu_create_channel),
                 PrimaryDrawerItem().withIdentifier(103)
                     .withIconTintingEnabled(true)
                     .withName("Контакты")
                     .withSelectable(false)
                     .withIcon(R.drawable.ic_menu_contacts),
-                PrimaryDrawerItem().withIdentifier(104)
-                    .withIconTintingEnabled(true)
-                    .withName("Звонки")
-                    .withSelectable(false)
-                    .withIcon(R.drawable.ic_menu_phone),
                 PrimaryDrawerItem().withIdentifier(105)
                     .withIconTintingEnabled(true)
-                    .withName("Избранное")
+                    .withName("Календарь")
                     .withSelectable(false)
-                    .withIcon(R.drawable.ic_menu_favorites),
+                    .withIcon(R.drawable.ic_calendar),
                 PrimaryDrawerItem().withIdentifier(106)
                     .withIconTintingEnabled(true)
                     .withName("Настройки")
                     .withSelectable(false)
                     .withIcon(R.drawable.ic_menu_settings),
                 DividerDrawerItem(),
-                PrimaryDrawerItem().withIdentifier(108)
-                    .withIconTintingEnabled(true)
-                    .withName("Пригласить друзей")
-                    .withSelectable(false)
-                    .withIcon(R.drawable.ic_menu_invate),
                 PrimaryDrawerItem().withIdentifier(109)
                     .withIconTintingEnabled(true)
-                    .withName("Вопросы о телеграм")
+                    .withName("Помощь")
                     .withSelectable(false)
                     .withIcon(R.drawable.ic_menu_help)
             ).withOnDrawerItemClickListener(object : Drawer.OnDrawerItemClickListener {
@@ -123,8 +103,8 @@ class AppDrawer() {
 
     private fun clickToItem(position: Int) {
         when (position) {
-            7 -> APP_ACTIVITY.replaceFragment(SettingsFragment())
-            4 -> APP_ACTIVITY.replaceFragment(ContactsFragment())
+            4 -> APP_ACTIVITY.replaceFragment(SettingsFragment())
+            2 -> APP_ACTIVITY.replaceFragment(ContactsFragment())
         }
     }
 

@@ -10,7 +10,7 @@
         android:id="@+id/register_image"
         android:layout_width="55dp"
         android:layout_height="55dp"
-        android:layout_marginTop="@dimen/vertical_large_margin"
+        android:layout_marginTop="170dp"
         android:src="@drawable/ic_enter_code"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
