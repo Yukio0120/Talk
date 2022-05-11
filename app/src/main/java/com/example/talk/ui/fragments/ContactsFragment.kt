@@ -8,7 +8,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.talk.R
 import com.example.talk.database.*
 import com.example.talk.models.CommonModel
-import com.example.talk.ui.fragments.single_chat.SChatFragment
 import com.example.talk.utilits.*
 import com.firebase.ui.database.FirebaseRecyclerAdapter
 import com.firebase.ui.database.FirebaseRecyclerOptions
@@ -16,6 +15,7 @@ import com.google.firebase.database.DatabaseReference
 import de.hdodenhof.circleimageview.CircleImageView
 import kotlinx.android.synthetic.main.contact_item.view.*
 import kotlinx.android.synthetic.main.fragment_contacts.*
+import com.example.talk.ui.fragments.single_chat.SChatFragment
 
 
 class ContactsFragment : BaseFragment(R.layout.fragment_contacts) {
