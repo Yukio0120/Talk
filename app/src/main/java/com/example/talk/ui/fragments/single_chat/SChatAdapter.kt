@@ -8,10 +8,9 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.example.talk.R
 import com.example.talk.models.CommonModel
-import com.example.talk.utilits.CURRENT_UID
+import com.example.talk.database.CURRENT_UID
 import com.example.talk.utilits.asTime
 import kotlinx.android.synthetic.main.message_item.view.*
-import java.util.*
 
 class SingleChatAdapter : RecyclerView.Adapter<SingleChatAdapter.SingleChatHolder>() {
 

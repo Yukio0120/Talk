@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.talk.R
+import com.example.talk.database.*
 import com.example.talk.models.CommonModel
 import com.example.talk.ui.fragments.single_chat.SChatFragment
 import com.example.talk.utilits.*

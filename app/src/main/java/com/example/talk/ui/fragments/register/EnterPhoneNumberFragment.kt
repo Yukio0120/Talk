@@ -1,9 +1,8 @@
-package com.example.talk.ui.fragments
+package com.example.talk.ui.fragments.register
 
 import androidx.fragment.app.Fragment
-import com.example.talk.MainActivity
 import com.example.talk.R
-import com.example.talk.activities.RegisterActivity
+import com.example.talk.database.AUTH
 import com.example.talk.utilits.*
 import com.google.firebase.FirebaseException
 import com.google.firebase.auth.PhoneAuthCredential
@@ -23,7 +22,7 @@ class EnterPhoneNumberFragment : Fragment(R.layout.fragment_enter_phone_number) 
             override fun onVerificationCompleted(credential: PhoneAuthCredential) {
                 AUTH.signInWithCredential(credential).addOnCompleteListener { task ->
                     if (task.isSuccessful){
-                        (activity as RegisterActivity).replaceActivity(MainActivity())
+                        restartActivity()
                     } else showToast(task.exception?.message.toString())
                 }
             }
@@ -53,7 +52,7 @@ class EnterPhoneNumberFragment : Fragment(R.layout.fragment_enter_phone_number) 
             mPhoneNumber,
             60,
             TimeUnit.SECONDS,
-            activity as RegisterActivity,
+            APP_ACTIVITY,
             mCallback
         )
     }

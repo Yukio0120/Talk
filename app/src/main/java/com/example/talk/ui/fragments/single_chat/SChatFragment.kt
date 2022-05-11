@@ -3,6 +3,7 @@ package com.example.talk.ui.fragments.single_chat
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.example.talk.R
+import com.example.talk.database.*
 import com.example.talk.models.CommonModel
 import com.example.talk.models.UserModel
 import com.example.talk.ui.fragments.BaseFragment

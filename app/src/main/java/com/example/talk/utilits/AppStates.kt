@@ -1,5 +1,7 @@
 package com.example.talk.utilits
 
+import com.example.talk.database.*
+
 enum class AppStates(val state:String) {
     ONLINE("в сети"),
     OFFLINE("был недавно"),

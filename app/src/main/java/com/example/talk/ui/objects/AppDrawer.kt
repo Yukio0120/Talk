@@ -9,7 +9,7 @@ import com.example.talk.R
 import com.example.talk.ui.fragments.ContactsFragment
 import com.example.talk.ui.fragments.SettingsFragment
 import com.example.talk.utilits.APP_ACTIVITY
-import com.example.talk.utilits.USER
+import com.example.talk.database.USER
 import com.example.talk.utilits.downloadAndSetImage
 import com.example.talk.utilits.replaceFragment
 import com.mikepenz.materialdrawer.AccountHeader
@@ -103,8 +103,8 @@ class AppDrawer() {
 
     private fun clickToItem(position: Int) {
         when (position) {
-            4 -> APP_ACTIVITY.replaceFragment(SettingsFragment())
-            2 -> APP_ACTIVITY.replaceFragment(ContactsFragment())
+            2 -> replaceFragment(ContactsFragment())
+            4 -> replaceFragment(SettingsFragment())
         }
     }
 

@@ -5,11 +5,12 @@ import com.example.talk.R
 import com.example.talk.utilits.APP_ACTIVITY
 
 
-class ChatsFragment : Fragment(R.layout.fragment_chats) {
+class MainFragment : Fragment(R.layout.fragment_chats) {
 
     override fun onResume() {
         super.onResume()
-        APP_ACTIVITY.title = "Чаты"
+        APP_ACTIVITY.title = "Talk"
+        APP_ACTIVITY.mAppDrawer.enableDrawer()
     }
 
 }
