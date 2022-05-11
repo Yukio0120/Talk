@@ -8,6 +8,7 @@ import com.example.talk.models.CommonModel
 import com.example.talk.models.UserModel
 import com.example.talk.ui.fragments.BaseFragment
 import com.example.talk.utilits.*
+import com.google.firebase.database.ChildEventListener
 import com.google.firebase.database.DatabaseReference
 import kotlinx.android.synthetic.main.activity_main.view.*
 import kotlinx.android.synthetic.main.fragment_s_chat.*
@@ -24,8 +25,8 @@ class SChatFragment(private val contact: CommonModel) :
     private lateinit var mRefMessages: DatabaseReference
     private lateinit var mAdapter: SingleChatAdapter
     private lateinit var mRecyclerView: RecyclerView
-    private lateinit var mMessagesListener: AppValueEventListener
-    private var mListMessages = emptyList<CommonModel>()
+    private lateinit var mMessagesListener: ChildEventListener
+    private var mListMessages = mutableListOf<CommonModel>()
 
     override fun onResume() {
         super.onResume()
@@ -36,16 +37,16 @@ class SChatFragment(private val contact: CommonModel) :
     private fun initRecycleView() {
         mRecyclerView = chat_recycle_view
         mAdapter = SingleChatAdapter()
-        mRefMessages = REF_DATABASE_ROOT.child(NODE_MESSAGES)
+        mRefMessages = REF_DATABASE_ROOT
+            .child(NODE_MESSAGES)
             .child(CURRENT_UID)
             .child(contact.id)
         mRecyclerView.adapter = mAdapter
-        mMessagesListener = AppValueEventListener { dataSnapshot ->
-            mListMessages = dataSnapshot.children.map { it.getCommonModel() }
-            mAdapter.setList(mListMessages)
+        mMessagesListener = AppChildEventListener {
+            mAdapter.addItem(it.getCommonModel())
             mRecyclerView.smoothScrollToPosition(mAdapter.itemCount)
         }
-        mRefMessages.addValueEventListener(mMessagesListener)
+        mRefMessages.addChildEventListener(mMessagesListener)
     }
 
     private fun initToolbar() {
@@ -61,7 +62,7 @@ class SChatFragment(private val contact: CommonModel) :
         chat_btn_send.setOnClickListener {
             val message = chat_input_message.text.toString()
             if (message.isEmpty()) {
-                showToast("ВВедите сообщение")
+                showToast("Введите сообщение")
             } else sendMessage(message, contact.id, TYPE_TEXT) {
                 chat_input_message.setText("")
             }
