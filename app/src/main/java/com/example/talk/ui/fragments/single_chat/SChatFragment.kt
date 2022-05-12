@@ -1,9 +1,12 @@
 package com.example.talk.ui.fragments.single_chat
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
+import android.view.MotionEvent
 import android.view.View
 import android.widget.AbsListView
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
@@ -19,6 +22,9 @@ import kotlinx.android.synthetic.main.activity_main.view.*
 import kotlinx.android.synthetic.main.fragment_s_chat.*
 import kotlinx.android.synthetic.main.fragment_settings.*
 import kotlinx.android.synthetic.main.toolbar_info.view.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 
 class SChatFragment(private val contact: CommonModel) :
@@ -45,28 +51,46 @@ class SChatFragment(private val contact: CommonModel) :
         initRecycleView()
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     private fun initFields() {
         mSwipeRefreshLayout = chat_swipe_refresh
         mLayoutManager = LinearLayoutManager(this.context)
         chat_input_message.addTextChangedListener(AppTextWatcher {
             val string = chat_input_message.text.toString()
-            if (string.isEmpty()) {
+            if (string.isEmpty()||string == "Запись...") {
                 chat_btn_send.visibility = View.GONE
                 chat_btn_attach.visibility = View.VISIBLE
+                chat_btn_voice.visibility = View.VISIBLE
             } else {
                 chat_btn_send.visibility = View.VISIBLE
                 chat_btn_attach.visibility = View.GONE
+                chat_btn_voice.visibility = View.GONE
             }
         })
 
-        chat_btn_attach.setOnClickListener { attachFile() }
+        CoroutineScope(Dispatchers.IO).launch {
+            chat_btn_voice.setOnTouchListener { v, event ->
+                if (checkPermission(RECORD_AUDIO)){
+                    if (event.action == MotionEvent.ACTION_DOWN){
+                        //TODO record
+                        chat_input_message.setText("Запись...")
+                        chat_btn_voice.setColorFilter(ContextCompat.getColor(APP_ACTIVITY,R.color.teal_dark))
+                    } else if (event.action == MotionEvent.ACTION_UP){
+                        //TODO stop record
+                        chat_input_message.setText("")
+                        chat_btn_voice.colorFilter = null
+                    }
+                }
+                true
+            }
+        }
     }
 
     private fun attachFile() {
         CropImage.activity()
             .setAspectRatio(1, 1)
             .setRequestedSize(250, 250)
-            .start(APP_ACTIVITY,this)
+            .start(APP_ACTIVITY, this)
     }
 
     private fun initRecycleView() {
@@ -179,7 +203,7 @@ class SChatFragment(private val contact: CommonModel) :
                 .child(messageKey)
             putImageToStorage(uri, path) {
                 getUrlFromStorage(path) {
-                    sendMessageAsImage(contact.id,it,messageKey)
+                    sendMessageAsImage(contact.id, it, messageKey)
                     mSmoothScrollToPosition = true
                 }
             }
