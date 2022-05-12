@@ -17,6 +17,7 @@
 
     <dimen name="toolbar_img_w">45dp</dimen>
     <dimen name="toolbar_img_h">45dp</dimen>
-
+    <dimen name="chat_image_width">180dp</dimen>
+    <dimen name="chat_image_height">180dp</dimen>
 
 </resources>
