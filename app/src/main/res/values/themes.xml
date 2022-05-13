@@ -9,6 +9,7 @@
         <item name="colorControlActivated">@color/teal</item>
         <item name="popupTheme">@style/actionMenu</item>
         <item name="android:colorPrimaryDark">@color/teal</item> //цвет шторки
+
         <!-- Secondary brand color. -->
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
@@ -27,7 +28,6 @@
         <item name="material_drawer_header_selection_text">@color/material_drawer_header_selection_text</item>
         <item name="material_drawer_header_selection_subtext">@color/material_drawer_dark_header_selection_subtext</item>
         <item name="material_drawer_legacy_style">false</item>
-
 
     </style>
 

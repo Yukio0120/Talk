@@ -92,3 +92,4 @@ fun initContacts() {
     val timeFormat = SimpleDateFormat ("HH:mm", Locale.getDefault())
     return timeFormat.format(time)
 }
+

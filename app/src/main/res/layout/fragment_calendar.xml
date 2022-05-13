@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp"
+    android:background="@color/teal_dark"
+    tools:context=".ui.fragments.CalendarFragment">
+
+
+    <CalendarView
+        android:id="@+id/calender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/vertical_large_margin">
+
+
+    </CalendarView>
+
+    <TextView
+        android:id="@+id/data_view_calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calender"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/vertical_large_margin"
+        android:text="Set the Date"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+    <View
+        android:layout_below="@id/calender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/separator" />
+</RelativeLayout>

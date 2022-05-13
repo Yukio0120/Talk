@@ -4,7 +4,7 @@
     <dimen name="app_margin">16dp</dimen>
     <dimen name="app_small_margin">10dp</dimen>
     <dimen name="smallText">14sp</dimen>
-    <dimen name="vertical_large_margin">16dp</dimen>
+    <dimen name="vertical_large_margin">28dp</dimen>
 
 
 <!--    settings    -->
