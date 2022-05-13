@@ -15,23 +15,22 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="@dimen/vertical_large_margin">
-
-
     </CalendarView>
+    <View
+        android:id="@+id/line_calendar"
+        android:layout_below="@id/calender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/separator" />
 
     <TextView
         android:id="@+id/data_view_calendar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/calender"
+        android:layout_below="@id/line_calendar"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/vertical_large_margin"
-        android:text="Set the Date"
+        android:layout_marginTop="@dimen/app_margin"
+        android:text="@string/register_hint_default_calendar"
         android:textColor="@color/white"
         android:textStyle="bold" />
-    <View
-        android:layout_below="@id/calender"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        style="@style/separator" />
 </RelativeLayout>
