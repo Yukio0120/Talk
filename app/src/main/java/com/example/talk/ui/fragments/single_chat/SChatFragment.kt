@@ -20,7 +20,6 @@ import com.google.firebase.database.DatabaseReference
 import com.theartofdev.edmodo.cropper.CropImage
 import kotlinx.android.synthetic.main.activity_main.view.*
 import kotlinx.android.synthetic.main.fragment_s_chat.*
-import kotlinx.android.synthetic.main.fragment_settings.*
 import kotlinx.android.synthetic.main.toolbar_info.view.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -51,6 +50,9 @@ class SChatFragment(private val contact: CommonModel) :
         initRecycleView()
     }
 
+
+
+
     @SuppressLint("ClickableViewAccessibility")
     private fun initFields() {
         mSwipeRefreshLayout = chat_swipe_refresh
@@ -67,7 +69,7 @@ class SChatFragment(private val contact: CommonModel) :
                 chat_btn_voice.visibility = View.GONE
             }
         })
-
+        chat_btn_attach.setOnClickListener { attachFile() }
         CoroutineScope(Dispatchers.IO).launch {
             chat_btn_voice.setOnTouchListener { v, event ->
                 if (checkPermission(RECORD_AUDIO)){
@@ -188,6 +190,7 @@ class SChatFragment(private val contact: CommonModel) :
         mToolbarInfo.toolbar_chat_status.text = mReceivingUser.state
     }
 
+    @Deprecated("Deprecated in Java")
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         /* Активность которая запускается для получения картинки для фото пользователя */
         super.onActivityResult(requestCode, resultCode, data)
