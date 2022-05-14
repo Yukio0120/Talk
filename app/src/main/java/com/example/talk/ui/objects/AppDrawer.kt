@@ -6,11 +6,9 @@ import android.view.View
 import android.widget.ImageView
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.talk.R
-import com.example.talk.ui.fragments.ContactsFragment
-import com.example.talk.ui.fragments.SettingsFragment
 import com.example.talk.utilits.APP_ACTIVITY
 import com.example.talk.database.USER
-import com.example.talk.ui.fragments.CalendarFragment
+import com.example.talk.ui.fragments.*
 import com.example.talk.utilits.downloadAndSetImage
 import com.example.talk.utilits.replaceFragment
 import com.mikepenz.materialdrawer.AccountHeader
@@ -87,9 +85,14 @@ class AppDrawer() {
                 DividerDrawerItem(),
                 PrimaryDrawerItem().withIdentifier(109)
                     .withIconTintingEnabled(true)
-                    .withName("Помощь")
+                    .withName("Справочник")
                     .withSelectable(false)
-                    .withIcon(R.drawable.ic_menu_help)
+                    .withIcon(R.drawable.ic_menu_help),
+                PrimaryDrawerItem().withIdentifier(109)
+                    .withIconTintingEnabled(true)
+                    .withName("Документация")
+                    .withSelectable(false)
+                    .withIcon(R.drawable.ic_doc)
             ).withOnDrawerItemClickListener(object : Drawer.OnDrawerItemClickListener {
                 override fun onItemClick(
                     view: View?,
@@ -107,6 +110,8 @@ class AppDrawer() {
             2 -> replaceFragment(ContactsFragment())
             3 -> replaceFragment(CalendarFragment())
             4 -> replaceFragment(SettingsFragment())
+            6 -> replaceFragment(GuideFragment())
+            7 -> replaceFragment(DocFragment())
         }
     }
 
