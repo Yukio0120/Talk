@@ -1,10 +1,10 @@
-package com.example.talk.ui.fragments.msg_recycle_view.view_holders
+package com.example.talk.ui.msg_recycle_view.view_holders
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.talk.R
-import com.example.talk.ui.fragments.msg_recycle_view.views.MessageView
+import com.example.talk.ui.msg_recycle_view.views.MessageView
 
 class AppHolderFactory {
     companion object {
@@ -14,6 +14,11 @@ class AppHolderFactory {
                     val view = LayoutInflater.from(parent.context)
                         .inflate(R.layout.message_item_image, parent, false)
                     HolderImageMessage(view)
+                }
+                MessageView.MESSAGE_VOICE -> {
+                    val view = LayoutInflater.from(parent.context)
+                        .inflate(R.layout.message_item_voice, parent, false)
+                    HolderVoiceMessage(view)
                 }
                 else ->{
                     val view = LayoutInflater.from(parent.context)

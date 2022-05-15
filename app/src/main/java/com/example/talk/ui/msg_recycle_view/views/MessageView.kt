@@ -1,4 +1,4 @@
-package com.example.talk.ui.fragments.msg_recycle_view.views
+package com.example.talk.ui.msg_recycle_view.views
 
 interface MessageView {
 
@@ -13,6 +13,8 @@ interface MessageView {
             get() = 0
         val MESSAGE_TEXT: Int
             get() = 1
+        val MESSAGE_VOICE: Int
+            get() = 2
     }
 
     fun getTypeView():Int

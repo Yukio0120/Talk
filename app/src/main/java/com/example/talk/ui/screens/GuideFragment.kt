@@ -1,30 +1,26 @@
-package com.example.talk.ui.fragments
+package com.example.talk.ui.screens
 
 import android.annotation.SuppressLint
-import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import com.example.talk.R
 import com.example.talk.utilits.APP_ACTIVITY
-import kotlinx.android.synthetic.main.fragment_doc.*
+import kotlinx.android.synthetic.main.fragment_guide.*
 
 
-class DocFragment : BaseFragment(R.layout.fragment_doc) {
+class GuideFragment : BaseFragment(R.layout.fragment_guide) {
+
     private lateinit var webView: WebView
 
     override fun onResume() {
         super.onResume()
-        APP_ACTIVITY.title = "Документация"
-        initDoc()
+        APP_ACTIVITY.title = "Справочник"
+        initGuide()
     }
 
     @SuppressLint("SetJavaScriptEnabled")
-    fun initDoc() {
-        webView = web_doc_view
+     fun initGuide() {
+        webView = web_view
         webView.settings.javaScriptEnabled = true
         webView.settings.allowFileAccess = true
 
@@ -35,7 +31,7 @@ class DocFragment : BaseFragment(R.layout.fragment_doc) {
                 return true
             }
         }
-        webView.loadUrl("file:///android_asset/doc.html")
+        webView.loadUrl("file:///android_asset/index.html")
     }
 
 }

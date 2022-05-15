@@ -1,4 +1,4 @@
-package com.example.talk.ui.fragments.register
+package com.example.talk.ui.screens.register
 
 import androidx.fragment.app.Fragment
 import com.example.talk.R

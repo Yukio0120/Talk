@@ -1,7 +1,8 @@
-package com.example.talk.ui.fragments.msg_recycle_view.views
+package com.example.talk.ui.msg_recycle_view.views
 
 import com.example.talk.models.CommonModel
 import com.example.talk.utilits.TYPE_MESSAGE_IMAGE
+import com.example.talk.utilits.TYPE_MESSAGE_VOICE
 
 class AppViewFactory {
     companion object{
@@ -13,6 +14,12 @@ class AppViewFactory {
                     message.timeStamp.toString(),
                     message.fileUrl,
                 )
+                TYPE_MESSAGE_VOICE-> ViewVoiceMessage(
+                        message.id,
+                        message.from,
+                        message.timeStamp.toString(),
+                        message.fileUrl,
+                    )
                 else -> ViewTextMessage(
                     message.id,
                     message.from,

@@ -1,4 +1,4 @@
-package com.example.talk.ui.fragments
+package com.example.talk.ui.screens
 
 import com.example.talk.R
 import com.example.talk.database.*

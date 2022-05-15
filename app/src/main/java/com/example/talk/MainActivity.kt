@@ -9,8 +9,8 @@ import com.example.talk.database.AUTH
 import com.example.talk.database.initFirebase
 import com.example.talk.database.initUser
 import com.example.talk.databinding.ActivityMainBinding
-import com.example.talk.ui.fragments.MainFragment
-import com.example.talk.ui.fragments.register.EnterPhoneNumberFragment
+import com.example.talk.ui.screens.MainFragment
+import com.example.talk.ui.screens.register.EnterPhoneNumberFragment
 import com.example.talk.ui.objects.AppDrawer
 import com.example.talk.utilits.*
 import kotlinx.coroutines.CoroutineScope

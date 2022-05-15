@@ -1,13 +1,10 @@
-package com.example.talk.ui.fragments
+package com.example.talk.ui.screens
 
-import android.content.Intent
-import android.view.View
 import android.widget.CalendarView
 import android.widget.TextView
 import com.example.talk.R
 import com.example.talk.utilits.APP_ACTIVITY
 import kotlinx.android.synthetic.main.fragment_calendar.*
-import java.util.*
 
 
 class CalendarFragment : BaseFragment(R.layout.fragment_calendar) {

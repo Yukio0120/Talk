@@ -1,4 +1,4 @@
-package com.example.talk.ui.fragments
+package com.example.talk.ui.screens
 
 import android.app.Activity.RESULT_OK
 import android.content.Intent
