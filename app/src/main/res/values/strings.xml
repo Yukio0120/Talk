@@ -29,4 +29,5 @@
     <string name="settings_hint_input_surname">Фамилия</string>
     <string name="toast_is_empty_name">Заполните поле "Имя"</string>
     <string name="toast_data_update">Данные обнолены</string>
+    <string name="msg">Сообщения</string>
 </resources>

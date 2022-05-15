@@ -9,6 +9,7 @@
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/ripple_effect.xml" value="0.1775" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/activity_main.xml" value="0.176" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/activity_register.xml" value="0.2115036231884058" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/choice_upload.xml" value="0.1625" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/contact_item.xml" value="0.24048913043478262" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/fragment_calendar.xml" value="0.23324275362318841" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/fragment_change_bio.xml" value="0.24048913043478262" />
@@ -20,9 +21,10 @@
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/fragment_enter_code.xml" value="0.2115036231884058" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/fragment_enter_phone_number.xml" value="0.2" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/fragment_link.xml" value="0.24048913043478262" />
-        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/fragment_s_chat.xml" value="0.24048913043478262" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/fragment_s_chat.xml" value="0.17374517374517376" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/fragment_settings.xml" value="0.2" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/message_item.xml" value="0.24048913043478262" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/message_item_file.xml" value="0.2115036231884058" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/message_item_image.xml" value="0.2115036231884058" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/message_item_text.xml" value="0.2115036231884058" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/message_item_voice.xml" value="0.264" />

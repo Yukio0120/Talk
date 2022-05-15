@@ -1,77 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-
     tools:context=".ui.screens.single_chat.SChatFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.screens.single_chat.SChatFragment">
 
-    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-        android:id="@+id/chat_swipe_refresh"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/chat_input_message">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/chat_recycle_view"
-            android:layout_width="match_parent"
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/chat_swipe_refresh"
+            android:layout_width="wrap_content"
             android:layout_height="0dp"
-            android:background="@color/green_user_ms"
-            tools:listitem="@layout/message_item" />
-    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/chat_input_message">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/chat_recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/green_user_ms">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 
 
-    <EditText
-        android:id="@+id/chat_input_message"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="Message"
-        android:padding="@dimen/appPadding"
-        android:textColor="@color/black"
-        android:textColorHint="@color/gray"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/chat_btn_attach"
-        app:layout_constraintStart_toStartOf="parent" />
+        <EditText
+            android:id="@+id/chat_input_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/msg"
+            android:padding="@dimen/appPadding"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/chat_btn_attach"
+            app:layout_constraintStart_toStartOf="parent"
+            android:autofillHints=""
+            android:inputType="" />
 
-    <ImageView
-        android:id="@+id/chat_btn_send"
-        android:layout_width="50dp"
-        android:layout_height="0dp"
-        android:padding="@dimen/appPadding"
-        android:visibility="gone"
-        android:src="@drawable/ic_baseline_send_24"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/chat_input_message" />
-    <ImageView
-        android:id="@+id/chat_btn_attach"
-        android:layout_width="50dp"
-        android:layout_height="0dp"
-        android:padding="@dimen/appPadding"
-        android:background="@color/white"
-        android:src="@drawable/ic_attach"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/chat_btn_voice"
-        app:layout_constraintTop_toTopOf="@+id/chat_input_message" />
+        <ImageView
+            android:id="@+id/chat_btn_send"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:padding="@dimen/appPadding"
+            android:visibility="gone"
+            android:src="@drawable/ic_baseline_send_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/chat_input_message"
+            android:contentDescription="@string/cd_register_image" />
+        <ImageView
+            android:id="@+id/chat_btn_attach"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:padding="@dimen/appPadding"
+            android:background="@color/white"
+            android:src="@drawable/ic_attach"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/chat_btn_voice"
+            app:layout_constraintTop_toTopOf="@+id/chat_input_message"
+            android:contentDescription="@string/cd_register_image" />
 
-    <ImageView
-        android:id="@+id/chat_btn_voice"
-        android:layout_width="50dp"
-        android:layout_height="0dp"
-        android:padding="@dimen/appPadding"
-        android:background="@color/white"
-        android:src="@drawable/ic_voice"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/chat_input_message" />
+        <ImageView
+            android:id="@+id/chat_btn_voice"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:padding="@dimen/appPadding"
+            android:src="@drawable/ic_voice"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/chat_input_message"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include layout="@layout/choice_upload"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 
-
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>

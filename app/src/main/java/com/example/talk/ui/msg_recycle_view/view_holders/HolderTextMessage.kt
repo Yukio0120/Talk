@@ -9,7 +9,7 @@ import com.example.talk.ui.msg_recycle_view.views.MessageView
 import com.example.talk.utilits.asTime
 import kotlinx.android.synthetic.main.message_item_text.view.*
 
-class HolderTextMessage(view: View): RecyclerView.ViewHolder(view)  {
+class HolderTextMessage(view: View) : RecyclerView.ViewHolder(view), MessageHolder {
     private val blocUserMessage: ConstraintLayout = view.bloc_user_message
     private val chatUserMessage: TextView = view.chat_user_message
     private val chatUserMessageTime: TextView = view.chat_user_message_time
@@ -18,22 +18,25 @@ class HolderTextMessage(view: View): RecyclerView.ViewHolder(view)  {
     private val chatReceivedMessageTime: TextView = view.chat_other_user_message_time
 
 
-
-     fun drawMessageText(holder: HolderTextMessage, view: MessageView) {
-
+    override fun drawMessage(view: MessageView) {
         if (view.from == CURRENT_UID) {
-            holder.blocUserMessage.visibility = View.VISIBLE
-            holder.blocReceivedMessage.visibility = View.GONE
-            holder.chatUserMessage.text = view.text
-            holder.chatUserMessageTime.text =
+            blocUserMessage.visibility = View.VISIBLE
+            blocReceivedMessage.visibility = View.GONE
+            chatUserMessage.text = view.text
+            chatUserMessageTime.text =
                 view.timeStamp.asTime()
         } else {
-            holder.blocUserMessage.visibility = View.GONE
-            holder.blocReceivedMessage.visibility = View.VISIBLE
-            holder.chatReceivedMessage.text = view.text
-            holder.chatReceivedMessageTime.text =
+            blocUserMessage.visibility = View.GONE
+            blocReceivedMessage.visibility = View.VISIBLE
+            chatReceivedMessage.text = view.text
+            chatReceivedMessageTime.text =
                 view.timeStamp.asTime()
         }
     }
 
+    override fun onAttach(view: MessageView) {
+    }
+
+    override fun onDetach() {
+    }
 }
