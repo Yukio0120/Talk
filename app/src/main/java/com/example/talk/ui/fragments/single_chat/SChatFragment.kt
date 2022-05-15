@@ -16,6 +16,7 @@ import com.example.talk.database.*
 import com.example.talk.models.CommonModel
 import com.example.talk.models.UserModel
 import com.example.talk.ui.fragments.BaseFragment
+import com.example.talk.ui.fragments.msg_recycle_view.views.AppViewFactory
 import com.example.talk.utilits.*
 import com.google.firebase.database.DatabaseReference
 import com.theartofdev.edmodo.cropper.CropImage
@@ -130,11 +131,11 @@ class SChatFragment(private val contact: CommonModel) :
             val message = it.getCommonModel()
 
             if (mSmoothScrollToPosition) {
-                mAdapter.addItemToBottom(message) {
+                mAdapter.addItemToBottom(AppViewFactory.getView(message)) {
                     mRecyclerView.smoothScrollToPosition(mAdapter.itemCount)
                 }
             } else {
-                mAdapter.addItemToTop(message) {
+                mAdapter.addItemToTop(AppViewFactory.getView(message)) {
                     mSwipeRefreshLayout.isRefreshing = false
                 }
             }
