@@ -9,6 +9,7 @@ import com.example.talk.R
 import com.example.talk.utilits.APP_ACTIVITY
 import com.example.talk.database.USER
 import com.example.talk.ui.screens.*
+import com.example.talk.ui.screens.settings.SettingsFragment
 import com.example.talk.utilits.downloadAndSetImage
 import com.example.talk.utilits.replaceFragment
 import com.mikepenz.materialdrawer.AccountHeader

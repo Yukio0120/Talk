@@ -4,8 +4,7 @@ import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
 import android.net.Uri
-import android.view.MotionEvent
-import android.view.View
+import android.view.*
 import android.widget.AbsListView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -17,6 +16,8 @@ import com.example.talk.models.CommonModel
 import com.example.talk.models.UserModel
 import com.example.talk.ui.screens.BaseFragment
 import com.example.talk.ui.msg_recycle_view.views.AppViewFactory
+import com.example.talk.ui.screens.main_list.MainListFragment
+import com.example.talk.ui.screens.settings.ChangeNameFragment
 import com.example.talk.utilits.*
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.firebase.database.DatabaseReference
@@ -63,6 +64,7 @@ class SChatFragment(private val contact: CommonModel) :
 
     @SuppressLint("ClickableViewAccessibility")
     private fun initFields() {
+        setHasOptionsMenu(true)
         mBottomSheetBehavior= BottomSheetBehavior.from(bottom_sheet_choice)
         mBottomSheetBehavior.state = BottomSheetBehavior.STATE_HIDDEN
         mAppVoiceRecorder = AppVoiceRecorder()
@@ -212,6 +214,7 @@ class SChatFragment(private val contact: CommonModel) :
                 contact.id,
                 TYPE_TEXT
             ) {
+                saveToMainList(contact.id, TYPE_CHAT)
                 chat_input_message.setText("")
             }
         }
@@ -266,5 +269,22 @@ class SChatFragment(private val contact: CommonModel) :
         mAdapter.onDestroy()
     }
 
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        activity?.menuInflater?.inflate(R.menu.schat_action_menu, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.btn_clean_chat -> clearChat(contact.id){
+                showToast("Чат очищен")
+                replaceFragment(MainListFragment())
+            }
+            R.id.btn_delete_chat -> deleteChat(contact.id){
+                showToast("Чат удален")
+                replaceFragment(MainListFragment())
+            }
+        }
+        return true
+    }
 
 }

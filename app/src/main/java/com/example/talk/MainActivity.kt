@@ -9,7 +9,7 @@ import com.example.talk.database.AUTH
 import com.example.talk.database.initFirebase
 import com.example.talk.database.initUser
 import com.example.talk.databinding.ActivityMainBinding
-import com.example.talk.ui.screens.MainFragment
+import com.example.talk.ui.screens.main_list.MainListFragment
 import com.example.talk.ui.screens.register.EnterPhoneNumberFragment
 import com.example.talk.ui.objects.AppDrawer
 import com.example.talk.utilits.*
@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(mToolbar)
         if (AUTH.currentUser != null) {
             mAppDrawer.create()
-            replaceFragment(MainFragment(), false)
+            replaceFragment(MainListFragment(), false)
         } else {
             replaceFragment(EnterPhoneNumberFragment(), false)
         }

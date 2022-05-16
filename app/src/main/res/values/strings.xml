@@ -30,4 +30,8 @@
     <string name="toast_is_empty_name">Заполните поле "Имя"</string>
     <string name="toast_data_update">Данные обнолены</string>
     <string name="msg">Сообщения</string>
+    <string name="name_item">Имя итем</string>
+    <string name="last_msg">Последнее сообщение</string>
+    <string name="clean_chat">Очистить чат</string>
+    <string name="delete_chat">Удалить чат</string>
 </resources>
