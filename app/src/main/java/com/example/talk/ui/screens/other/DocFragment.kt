@@ -14,7 +14,7 @@ class DocFragment : BaseFragment(R.layout.fragment_doc) {
 
     override fun onResume() {
         super.onResume()
-        APP_ACTIVITY.title = "Документация"
+        APP_ACTIVITY.title = getString(R.string.navbar_doc)
         initDoc()
     }
 

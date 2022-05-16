@@ -5,14 +5,13 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.talk.R
 import com.example.talk.database.*
 import com.example.talk.models.CommonModel
-import com.example.talk.utilits.APP_ACTIVITY
-import com.example.talk.utilits.AppValueEventListener
-import com.example.talk.utilits.hideKeyboard
+import com.example.talk.ui.screens.base.BaseFragment
+import com.example.talk.utilits.*
 import kotlinx.android.synthetic.main.fragment_add_contacts.*
 import kotlinx.android.synthetic.main.fragment_main_list.*
 
 
-class AddContactsFragment : Fragment(R.layout.fragment_add_contacts) {
+class AddContactsFragment : BaseFragment(R.layout.fragment_add_contacts) {
 
     private lateinit var mRecyclerView: RecyclerView
     private lateinit var mAdapter: AddContactsAdapter
@@ -23,13 +22,13 @@ class AddContactsFragment : Fragment(R.layout.fragment_add_contacts) {
 
     override fun onResume() {
         super.onResume()
-        APP_ACTIVITY.title = "Добавить участника"
-        APP_ACTIVITY.mAppDrawer.enableDrawer()
+        APP_ACTIVITY.title = getString(R.string.add_user_in_group)
         hideKeyboard()
         initRecyclerView()
         add_contacts_btn_next.setOnClickListener {
             listContacts.forEach {
-                println(it.id)
+                if (listContacts.isEmpty()) showToast("Добавьте участника")
+                else replaceFragment(CreateGroupFragment(listContacts))
             }
         }
     }

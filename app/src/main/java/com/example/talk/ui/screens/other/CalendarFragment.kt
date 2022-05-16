@@ -14,7 +14,7 @@ class CalendarFragment : BaseFragment(R.layout.fragment_calendar) {
 
     override fun onResume() {
         super.onResume()
-        APP_ACTIVITY.title = "Календарь"
+        APP_ACTIVITY.title = getString(R.string.navbar_calendar)
         initCalendar()
     }
 

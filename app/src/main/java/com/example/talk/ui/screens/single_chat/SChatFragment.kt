@@ -206,7 +206,7 @@ class SChatFragment(private val contact: CommonModel) :
             mSmoothScrollToPosition = true
             val message = chat_input_message.text.toString()
             if (message.isEmpty()) {
-                showToast("ВВедите сообщение")
+                showToast(getString(R.string.enter_message))
             } else sendMessage(
                 message,
                 contact.id,
@@ -274,11 +274,11 @@ class SChatFragment(private val contact: CommonModel) :
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.btn_clean_chat -> clearChat(contact.id){
-                showToast("Чат очищен")
+                showToast(getString(R.string.chat_clear_text))
                 replaceFragment(MainListFragment())
             }
             R.id.btn_delete_chat -> deleteChat(contact.id){
-                showToast("Чат удален")
+                showToast(getString(R.string.chat_delete_text))
                 replaceFragment(MainListFragment())
             }
         }

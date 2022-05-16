@@ -69,33 +69,33 @@ class AppDrawer() {
             .addDrawerItems(
                 PrimaryDrawerItem().withIdentifier(100)
                     .withIconTintingEnabled(true)
-                    .withName("Создать группу")
+                    .withName(R.string.navbar_group)
                     .withSelectable(false)
                     .withIcon(R.drawable.ic_menu_create_groups),
                 PrimaryDrawerItem().withIdentifier(103)
                     .withIconTintingEnabled(true)
-                    .withName("Контакты")
+                    .withName(R.string.navbar_contacts)
                     .withSelectable(false)
                     .withIcon(R.drawable.ic_menu_contacts),
                 PrimaryDrawerItem().withIdentifier(105)
                     .withIconTintingEnabled(true)
-                    .withName("Календарь")
+                    .withName(R.string.navbar_calendar)
                     .withSelectable(false)
                     .withIcon(R.drawable.ic_calendar),
                 PrimaryDrawerItem().withIdentifier(106)
                     .withIconTintingEnabled(true)
-                    .withName("Настройки")
+                    .withName(R.string.navbar_settings)
                     .withSelectable(false)
                     .withIcon(R.drawable.ic_menu_settings),
                 DividerDrawerItem(),
                 PrimaryDrawerItem().withIdentifier(109)
                     .withIconTintingEnabled(true)
-                    .withName("Справочник")
+                    .withName(R.string.navbar_guide)
                     .withSelectable(false)
                     .withIcon(R.drawable.ic_menu_help),
                 PrimaryDrawerItem().withIdentifier(109)
                     .withIconTintingEnabled(true)
-                    .withName("Документация")
+                    .withName(R.string.navbar_doc)
                     .withSelectable(false)
                     .withIcon(R.drawable.ic_doc)
             ).withOnDrawerItemClickListener(object : Drawer.OnDrawerItemClickListener {

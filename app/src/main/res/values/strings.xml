@@ -3,34 +3,61 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="user_default_username">press f</string>
     <string name="settings_default_state">online</string>
-    <string name="settings_text_account">Аккаунт</string>
+    <string name="settings_text_account">Account</string>
     <string name="settings_default_number">+71111111111</string>
-    <string name="settings_label_phone">Нажмите, чтобы изменить номер телефона</string>
+    <string name="settings_label_phone">Tap to change phone number</string>
     <string name="settings_default_username">press f</string>
-    <string name="settings_label_username">Имя пользователя</string>
-    <string name="settings_default_bio">О себе</string>
-    <string name="settings_label_bio">Напишите немного о себе</string>
-    <string name="settings_menu_change_name">Изменить имя</string>
-    <string name="settings_menu_exit">Выход</string>
+    <string name="settings_label_username">Username</string>
+    <string name="settings_default_bio">About</string>
+    <string name="settings_label_bio">bio</string>
+    <string name="settings_menu_change_name">Change name</string>
+    <string name="settings_menu_exit">Exit</string>
     <string name="cd_next">next</string>
     <string name="cd_register_image">register_image</string>
-    <string name="register_text_enter_code">Введите код</string>
-    <string name="register_text_enter_phone">Ваш телефон</string>
-    <string name="register_text_we_sent">Мы отправили SMS с кодом проверки на Ваш телефон</string>
-    <string name="register_text_phone">Введите Ваш номер телефона</string>
+    <string name="register_text_enter_code">Enter code</string>
+    <string name="register_text_enter_phone">Your phone number</string>
+    <string name="register_text_we_sent">We sent SMS with code on your phone number</string>
+    <string name="register_text_phone">Enter your phone number</string>
     <string name="register_hint_default_code">- - - - - -</string>
     <string name="register_hint_default_calendar">--/--/----</string>
-    <string name="register_title_your_phone">Ваш телефон</string>
-    <string name="register_toast_phone_number">Введите номер телефон</string>
+    <string name="register_title_your_phone">Your number</string>
+    <string name="register_toast_phone_number">Enter your phone number</string>
     <string name="register_hint_default_phone">-----------</string>
-    <string name="settings_hint_input_name">Имя</string>
-    <string name="settings_hint_input_username">Имя пользователя</string>
-    <string name="settings_hint_input_surname">Фамилия</string>
-    <string name="toast_is_empty_name">Заполните поле "Имя"</string>
-    <string name="toast_data_update">Данные обнолены</string>
-    <string name="msg">Сообщения</string>
-    <string name="name_item">Имя итем</string>
-    <string name="last_msg">Последнее сообщение</string>
-    <string name="clean_chat">Очистить чат</string>
-    <string name="delete_chat">Удалить чат</string>
+    <string name="settings_hint_input_name">Name</string>
+    <string name="settings_hint_input_username">Username</string>
+    <string name="settings_hint_input_surname">Surname</string>
+    <string name="toast_is_empty_name">Enter a name</string>
+    <string name="toast_data_update">Data update</string>
+    <string name="msg">Message</string>
+    <string name="name_item">Name item</string>
+    <string name="last_msg">Last message</string>
+    <string name="clean_chat">Clear chat</string>
+    <string name="delete_chat">Delete chat</string>
+    <string name="create_group">Create group</string>
+    <string name="input_name_group">Enter name group</string>
+    <string name="add_user_in_group">Add members</string>
+
+
+    <plurals name="count_members">
+        <item quantity="one">%d member</item>
+        <item quantity="few">%d members</item>
+        <item quantity="many">%d members</item>
+        <item quantity="other">%d members</item>
+    </plurals>
+
+
+
+<!--    navbar   -->
+    <string name="navbar_group">Create group</string>
+    <string name="navbar_contacts">Contacts</string>
+    <string name="navbar_calendar">Calendar</string>
+    <string name="navbar_settings">Settings</string>
+    <string name="navbar_guide">Guide</string>
+    <string name="navbar_doc">Documentation</string>
+    <string name="enter_message">Enter message</string>
+    <string name="Empty">The field should not be empty</string>
+    <string name="chat_clear_text">Chat clear</string>
+    <string name="chat_delete_text">Chat delete</string>
+    <string name="nickname_exists">This nickname already exists</string>
+
 </resources>

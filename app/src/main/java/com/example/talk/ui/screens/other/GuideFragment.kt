@@ -15,7 +15,7 @@ class GuideFragment : BaseFragment(R.layout.fragment_guide) {
 
     override fun onResume() {
         super.onResume()
-        APP_ACTIVITY.title = "Справочник"
+        APP_ACTIVITY.title = getString(R.string.navbar_guide)
         initGuide()
     }
 

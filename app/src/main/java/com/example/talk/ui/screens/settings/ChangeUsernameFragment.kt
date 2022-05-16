@@ -21,13 +21,13 @@ class ChangeUsernameFragment : BaseChangeFragment(R.layout.fragment_change_usern
     override  fun change() {
         mNewUsername = settings_input_username.text.toString().toLowerCase(Locale.getDefault())
         if (mNewUsername.isEmpty()) {
-            showToast("Поле пустое")
+            showToast(getString(R.string.Empty))
 
         } else {
             REF_DATABASE_ROOT.child(NODE_USERNAMES)
                 .addListenerForSingleValueEvent(AppValueEventListener {
                     if (it.hasChild(mNewUsername)) {
-                        showToast("Такой пользователь уже существует")
+                        showToast(getString(R.string.nickname_exists))
                     } else {
                         changeUsername()
                     }
