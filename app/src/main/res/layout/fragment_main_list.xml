@@ -12,5 +12,4 @@
         android:layout_height="match_parent"
         tools:listitem="@layout/main_list_item"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
-
 </FrameLayout>

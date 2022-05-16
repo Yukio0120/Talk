@@ -8,7 +8,11 @@ import androidx.drawerlayout.widget.DrawerLayout
 import com.example.talk.R
 import com.example.talk.utilits.APP_ACTIVITY
 import com.example.talk.database.USER
-import com.example.talk.ui.screens.*
+import com.example.talk.ui.screens.contacts.ContactsFragment
+import com.example.talk.ui.screens.groups.AddContactsFragment
+import com.example.talk.ui.screens.other.CalendarFragment
+import com.example.talk.ui.screens.other.DocFragment
+import com.example.talk.ui.screens.other.GuideFragment
 import com.example.talk.ui.screens.settings.SettingsFragment
 import com.example.talk.utilits.downloadAndSetImage
 import com.example.talk.utilits.replaceFragment
@@ -108,6 +112,7 @@ class AppDrawer() {
 
     private fun clickToItem(position: Int) {
         when (position) {
+            1 -> replaceFragment(AddContactsFragment())
             2 -> replaceFragment(ContactsFragment())
             3 -> replaceFragment(CalendarFragment())
             4 -> replaceFragment(SettingsFragment())

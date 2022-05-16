@@ -7,7 +7,7 @@ import android.view.MenuInflater
 import android.view.MenuItem
 import com.example.talk.R
 import com.example.talk.database.*
-import com.example.talk.ui.screens.BaseFragment
+import com.example.talk.ui.screens.base.BaseFragment
 import com.example.talk.utilits.*
 import com.theartofdev.edmodo.cropper.CropImage
 import com.theartofdev.edmodo.cropper.CropImageView

@@ -1,4 +1,4 @@
-package com.example.talk.ui.screens
+package com.example.talk.ui.screens.contacts
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.talk.R
 import com.example.talk.database.*
 import com.example.talk.models.CommonModel
+import com.example.talk.ui.screens.base.BaseFragment
 import com.example.talk.utilits.*
 import com.firebase.ui.database.FirebaseRecyclerAdapter
 import com.firebase.ui.database.FirebaseRecyclerOptions
@@ -49,7 +50,9 @@ class ContactsFragment : BaseFragment(R.layout.fragment_contacts) {
                 //Запускается тогда когда адаптер получает доступ к ViewGroup
                 val view = LayoutInflater.from(parent.context)
                     .inflate(R.layout.contact_item, parent, false)
-                return ContactsHolder(view)
+                return ContactsHolder(
+                    view
+                )
             }
 
             // Заполняет holder

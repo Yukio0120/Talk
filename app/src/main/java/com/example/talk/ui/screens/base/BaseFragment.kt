@@ -1,4 +1,4 @@
-package com.example.talk.ui.screens
+package com.example.talk.ui.screens.base
 
 import androidx.fragment.app.Fragment
 import com.example.talk.utilits.APP_ACTIVITY

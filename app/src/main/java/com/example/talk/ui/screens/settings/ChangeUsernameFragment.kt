@@ -2,7 +2,7 @@ package com.example.talk.ui.screens.settings
 
 import com.example.talk.R
 import com.example.talk.database.*
-import com.example.talk.ui.screens.BaseChangeFragment
+import com.example.talk.ui.screens.base.BaseChangeFragment
 import com.example.talk.utilits.*
 import kotlinx.android.synthetic.main.fragment_change_username.*
 import java.util.*

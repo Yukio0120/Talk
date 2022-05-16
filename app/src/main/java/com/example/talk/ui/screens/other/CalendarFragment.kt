@@ -1,8 +1,9 @@
-package com.example.talk.ui.screens
+package com.example.talk.ui.screens.other
 
 import android.widget.CalendarView
 import android.widget.TextView
 import com.example.talk.R
+import com.example.talk.ui.screens.base.BaseFragment
 import com.example.talk.utilits.APP_ACTIVITY
 import kotlinx.android.synthetic.main.fragment_calendar.*
 

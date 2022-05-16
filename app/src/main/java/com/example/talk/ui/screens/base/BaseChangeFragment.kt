@@ -1,4 +1,4 @@
-package com.example.talk.ui.screens
+package com.example.talk.ui.screens.base
 
 import android.view.Menu
 import android.view.MenuInflater

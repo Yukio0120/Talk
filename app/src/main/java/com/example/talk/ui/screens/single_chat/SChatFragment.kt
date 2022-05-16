@@ -1,7 +1,6 @@
 package com.example.talk.ui.screens.single_chat
 
 import android.annotation.SuppressLint
-import android.app.Activity
 import android.content.Intent
 import android.net.Uri
 import android.view.*
@@ -14,10 +13,9 @@ import com.example.talk.R
 import com.example.talk.database.*
 import com.example.talk.models.CommonModel
 import com.example.talk.models.UserModel
-import com.example.talk.ui.screens.BaseFragment
+import com.example.talk.ui.screens.base.BaseFragment
 import com.example.talk.ui.msg_recycle_view.views.AppViewFactory
 import com.example.talk.ui.screens.main_list.MainListFragment
-import com.example.talk.ui.screens.settings.ChangeNameFragment
 import com.example.talk.utilits.*
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.firebase.database.DatabaseReference
@@ -89,7 +87,7 @@ class SChatFragment(private val contact: CommonModel) :
             chat_btn_voice.setOnTouchListener { v, event ->
                 if (checkPermission(RECORD_AUDIO)) {
                     if (event.action == MotionEvent.ACTION_DOWN) {
-                        //TODO record
+                        //record
                         chat_input_message.setText("Запись")
                         chat_btn_voice.setColorFilter(
                             ContextCompat.getColor(
@@ -100,7 +98,7 @@ class SChatFragment(private val contact: CommonModel) :
                         val messageKey = getMessageKey(contact.id)
                         mAppVoiceRecorder.startRecord(messageKey)
                     } else if (event.action == MotionEvent.ACTION_UP) {
-                        //TODO stop record
+                        //stop record
                         chat_input_message.setText("")
                         chat_btn_voice.colorFilter = null
                         mAppVoiceRecorder.stopRecord { file, messageKey ->
