@@ -18,7 +18,7 @@ class AddContactsAdapter : RecyclerView.Adapter<AddContactsAdapter.AddContactsHo
 
     class AddContactsHolder(view: View) : RecyclerView.ViewHolder(view) {
         val itemName: TextView = view.add_contacts_item_name
-        val itemLastMessage: TextView = view.add_contacts_last_message
+        val itemLastMessage: TextView = view.add_contacts_state
         val itemPhoto: CircleImageView = view.add_contacts_item_photo
         val itemChoice:CircleImageView = view.add_contacts_item_choice
     }
@@ -46,7 +46,7 @@ class AddContactsAdapter : RecyclerView.Adapter<AddContactsAdapter.AddContactsHo
 
     override fun onBindViewHolder(holder: AddContactsHolder, position: Int) {
         holder.itemName.text = listItems[position].fullname
-        holder.itemLastMessage.text = listItems[position].lastMessage
+        holder.itemLastMessage.text = listItems[position].state
         holder.itemPhoto.downloadAndSetImage(listItems[position].photoUrl)
     }
 

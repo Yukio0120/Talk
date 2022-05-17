@@ -30,14 +30,14 @@
     <TextView
         android:id="@+id/add_contacts_item_name"
         style="@style/normalText"
-        tools:text="Name item"
+        tools:text="@string/name_item"
         app:layout_constraintStart_toEndOf="@id/add_contacts_item_photo"
         app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
-        android:id="@+id/add_contacts_last_message"
+        android:id="@+id/add_contacts_state"
         style="@style/smallText"
-        tools:text="Last message"
+        tools:text="@string/settings_default_state"
         app:layout_constraintStart_toEndOf="@id/add_contacts_item_photo"
         app:layout_constraintTop_toBottomOf="@id/add_contacts_item_name"/>
 

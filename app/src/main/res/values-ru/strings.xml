@@ -36,6 +36,7 @@
     <string name="create_group">Создать группу</string>
     <string name="input_name_group">Введите название группы</string>
     <string name="add_user_in_group">Добавить участника</string>
+    <string name="chat_empty">Чат пуст</string>
 
 
     <plurals name="count_members">

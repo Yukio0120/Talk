@@ -32,6 +32,7 @@
     <string name="name_item">Name item</string>
     <string name="last_msg">Last message</string>
     <string name="clean_chat">Clear chat</string>
+    <string name="chat_empty">Chat empty</string>
     <string name="delete_chat">Delete chat</string>
     <string name="create_group">Create group</string>
     <string name="input_name_group">Enter name group</string>

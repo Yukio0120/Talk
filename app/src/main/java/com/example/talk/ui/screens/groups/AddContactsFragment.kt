@@ -49,7 +49,7 @@ class AddContactsFragment : BaseFragment(R.layout.fragment_add_contacts) {
                                 val tempList = dataSnapshot2.children.map { it.getCommonModel() }
 
                                 if (tempList.isEmpty()){
-                                    newModel.lastMessage = getString(R.string.clean_chat)
+                                    newModel.lastMessage = getString(R.string.chat_empty)
                                 } else {
                                     newModel.lastMessage = tempList[0].text
                                 }
