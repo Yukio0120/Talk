@@ -53,10 +53,11 @@
     <string name="navbar_settings">Настройки</string>
     <string name="navbar_guide">Справочник</string>
     <string name="navbar_doc">Документация</string>
-    <string name="enter_message">ВВедите сообщение</string>
+    <string name="enter_message">Введите сообщение</string>
     <string name="Empty">Поле пустое</string>
     <string name="chat_clear_text">Чат очищен</string>
     <string name="chat_delete_text">Чат удален</string>
     <string name="nickname_exists">Такой пользователь уже существует</string>
+    <string name="enter_name">Введите имя</string>
 
 </resources>

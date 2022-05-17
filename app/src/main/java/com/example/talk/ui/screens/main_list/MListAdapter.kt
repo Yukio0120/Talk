@@ -7,13 +7,16 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.talk.R
 import com.example.talk.models.CommonModel
+import com.example.talk.ui.screens.groups.GChatFragment
 import com.example.talk.ui.screens.single_chat.SChatFragment
+import com.example.talk.utilits.TYPE_CHAT
+import com.example.talk.utilits.TYPE_GROUP
 import com.example.talk.utilits.downloadAndSetImage
 import com.example.talk.utilits.replaceFragment
 import de.hdodenhof.circleimageview.CircleImageView
 import kotlinx.android.synthetic.main.main_list_item.view.*
 
-class MListAdapter: RecyclerView.Adapter<MListAdapter.MainListHolder>() {
+class MListAdapter : RecyclerView.Adapter<MListAdapter.MainListHolder>() {
 
     private var listItems = mutableListOf<CommonModel>()
 
@@ -26,9 +29,13 @@ class MListAdapter: RecyclerView.Adapter<MListAdapter.MainListHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MainListHolder {
         val view =
             LayoutInflater.from(parent.context).inflate(R.layout.main_list_item, parent, false)
+
         val holder = MainListHolder(view)
         holder.itemView.setOnClickListener {
-            replaceFragment(SChatFragment(listItems[holder.adapterPosition]))
+            when(listItems[holder.adapterPosition].type){
+                TYPE_CHAT ->replaceFragment(SChatFragment(listItems[holder.adapterPosition]))
+                TYPE_GROUP -> replaceFragment(GChatFragment(listItems[holder.adapterPosition]))
+            }
         }
         return holder
     }
@@ -41,7 +48,7 @@ class MListAdapter: RecyclerView.Adapter<MListAdapter.MainListHolder>() {
         holder.itemPhoto.downloadAndSetImage(listItems[position].photoUrl)
     }
 
-    fun updateListItems(item: CommonModel){
+    fun updateListItems(item:CommonModel){
         listItems.add(item)
         notifyItemInserted(listItems.size)
     }

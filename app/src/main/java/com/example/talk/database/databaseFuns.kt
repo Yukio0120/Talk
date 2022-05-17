@@ -6,6 +6,7 @@ import com.example.talk.models.CommonModel
 import com.example.talk.models.UserModel
 import com.example.talk.utilits.APP_ACTIVITY
 import com.example.talk.utilits.AppValueEventListener
+import com.example.talk.utilits.TYPE_GROUP
 import com.example.talk.utilits.showToast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
@@ -211,8 +212,8 @@ fun saveToMainList(id: String, type: String) {
     val refUser = "$NODE_MAIN_LIST/$CURRENT_UID/$id"
     val refReceived = "$NODE_MAIN_LIST/$id/$CURRENT_UID"
 
-    val mapUser = hashMapOf<String,Any>()
-    val mapReceived = hashMapOf<String,Any>()
+    val mapUser = hashMapOf<String, Any>()
+    val mapReceived = hashMapOf<String, Any>()
 
     mapUser[CHILD_ID] = id
     mapUser[CHILD_TYPE] = type
@@ -220,7 +221,7 @@ fun saveToMainList(id: String, type: String) {
     mapReceived[CHILD_ID] = CURRENT_UID
     mapReceived[CHILD_TYPE] = type
 
-    val commonMap = hashMapOf<String,Any>()
+    val commonMap = hashMapOf<String, Any>()
     commonMap[refUser] = mapUser
     commonMap[refReceived] = mapReceived
 
@@ -246,4 +247,90 @@ fun clearChat(id: String, function: () -> Unit) {
                 .addOnSuccessListener { function() }
         }
         .addOnFailureListener { showToast(it.message.toString()) }
+}
+
+fun createGroupToDatabase(
+    nameGroup: String,
+    uri: Uri,
+    listContacts: List<CommonModel>,
+    function: () -> Unit
+) {
+
+    val keyGroup = REF_DATABASE_ROOT.child(NODE_GROUPS).push().key.toString()
+    val path = REF_DATABASE_ROOT.child(NODE_GROUPS).child(keyGroup)
+    val pathStorage = REF_STORAGE_ROOT.child(FOLDER_GROUPS_IMAGE).child(keyGroup)
+
+    val mapData = hashMapOf<String, Any>()
+    mapData[CHILD_ID] = keyGroup
+    mapData[CHILD_FULLNAME] = nameGroup
+    mapData[CHILD_PHOTO_URL] = "empty"
+    val mapMembers = hashMapOf<String, Any>()
+    listContacts.forEach {
+        mapMembers[it.id] = USER_MEMBER
+    }
+    mapMembers[CURRENT_UID] = USER_CREATOR
+
+    mapData[NODE_MEMBERS] = mapMembers
+
+    path.updateChildren(mapData)
+        .addOnSuccessListener {
+
+            if (uri != Uri.EMPTY) {
+                putFileToStorage(uri, pathStorage) {
+                    getUrlFromStorage(pathStorage) {
+                        path.child(CHILD_PHOTO_URL).setValue(it)
+                        addGroupsToMainList(mapData, listContacts) {
+                            function()
+                        }
+                    }
+                }
+            } else {
+                addGroupsToMainList(mapData, listContacts) {
+                    function()
+                }
+            }
+
+        }
+        .addOnFailureListener { showToast(it.message.toString()) }
+
+
+}
+
+fun addGroupsToMainList(
+    mapData: HashMap<String, Any>,
+    listContacts: List<CommonModel>,
+    function: () -> Unit
+) {
+    val path = REF_DATABASE_ROOT.child(NODE_MAIN_LIST)
+    val map = hashMapOf<String, Any>()
+
+    map[CHILD_ID] = mapData[CHILD_ID].toString()
+    map[CHILD_TYPE] = TYPE_GROUP
+    listContacts.forEach {
+        path.child(it.id).child(map[CHILD_ID].toString()).updateChildren(map)
+    }
+    path.child(CURRENT_UID).child(map[CHILD_ID].toString()).updateChildren(map)
+        .addOnSuccessListener { function() }
+        .addOnFailureListener { showToast(it.message.toString()) }
+
+}
+fun sendMessageToGroup(message: String, groupID: String, typeText: String, function: () -> Unit) {
+
+    val refMessages = "$NODE_GROUPS/$groupID/$NODE_MESSAGES"
+    val messageKey = REF_DATABASE_ROOT.child(refMessages).push().key
+
+    val mapMessage = hashMapOf<String, Any>()
+    mapMessage[CHILD_FROM] =
+        CURRENT_UID
+    mapMessage[CHILD_TYPE] = typeText
+    mapMessage[CHILD_TEXT] = message
+    mapMessage[CHILD_ID] = messageKey.toString()
+    mapMessage[CHILD_TIMESTAMP] =
+        ServerValue.TIMESTAMP
+
+    REF_DATABASE_ROOT.child(refMessages).child(messageKey.toString())
+        .updateChildren(mapMessage)
+        .addOnSuccessListener { function() }
+        .addOnFailureListener { showToast(it.message.toString()) }
+
 }

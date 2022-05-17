@@ -59,5 +59,6 @@
     <string name="chat_clear_text">Chat clear</string>
     <string name="chat_delete_text">Chat delete</string>
     <string name="nickname_exists">This nickname already exists</string>
+    <string name="enter_name">Enter name</string>
 
 </resources>
