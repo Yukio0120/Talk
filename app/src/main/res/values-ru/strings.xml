@@ -22,7 +22,7 @@
     <string name="register_hint_default_calendar">--/--/----</string>
     <string name="register_title_your_phone">Ваш телефон</string>
     <string name="register_toast_phone_number">Введите номер телефон</string>
-    <string name="register_hint_default_phone">-----------</string>
+    <string name="register_hint_default_phone">- - - - - - - - - - -</string>
     <string name="settings_hint_input_name">Имя</string>
     <string name="settings_hint_input_username">Имя пользователя</string>
     <string name="settings_hint_input_surname">Фамилия</string>

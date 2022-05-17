@@ -22,7 +22,7 @@
     <string name="register_hint_default_calendar">--/--/----</string>
     <string name="register_title_your_phone">Your number</string>
     <string name="register_toast_phone_number">Enter your phone number</string>
-    <string name="register_hint_default_phone">-----------</string>
+    <string name="register_hint_default_phone">- - - - - - - - - - -</string>
     <string name="settings_hint_input_name">Name</string>
     <string name="settings_hint_input_username">Username</string>
     <string name="settings_hint_input_surname">Surname</string>

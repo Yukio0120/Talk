@@ -1,5 +1,105 @@
-
-
-table{
- color: red;
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display: block;
 }
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea {
+    -webkit-appearance : none;
+    -moz-appearance    : none;
+    -ms-appearance     : none;
+    appearance         : none;
+    outline            : 0;
+    box-shadow         : none;
+}
+
+html {
+    -webkit-text-size-adjust : none;
+    text-size-adjust         : none
+}
+#pagewrap {
+    width: 980px;
+    margin: 0 auto;
+ }
+ #header {
+    height: 160px;
+ }
+ #content {
+    width: 600px;
+    float: left;
+ }
+ #sidebar {
+    width: 280px;
+    float: right;
+ }
+ #footer {
+    clear: both;
+ }
+
+ @media screen and (max-width: 980px) {
+    #pagewrap {
+       width: 95%;
+    }
+    #content {
+       width: 60%;
+       padding: 3% 4%;
+    }
+    #sidebar {
+       width: 30%;
+    }
+    #sidebar .widget {
+       padding: 8% 7%;
+       margin-bottom: 10px;
+    }
+ }
+  
+ @media screen and (max-width: 650px) {
+    #header {
+       height: auto;
+    }
+    #searchform {
+       position: absolute;
+       top: 5px;
+       right: 0;
+    }
+    #main-nav {
+       position: static;
+    }
+    #site-logo {
+       margin: 15px 100px 5px 0;
+       position: static;
+    }
+    #site-description {
+       margin: 0 0 15px;
+       position: static;
+    }
+    #content {
+       width: auto;
+       float: none;
+       margin: 20px 0;
+    }
+    #sidebar {
+       width: 100%;
+       float: none;
+       margin: 0;
+    }
+ }
+
+ @media screen and (max-width: 480px) {
+    html {
+       -webkit-text-size-adjust: none;
+    }
+    #main-nav a {
+       font-size: 90%;
+       padding: 10px 8px;
+    }
+ }
+ 
+ img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+ }
+ 
