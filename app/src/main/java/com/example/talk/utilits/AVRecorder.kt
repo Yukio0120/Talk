@@ -3,7 +3,7 @@ package com.example.talk.utilits
 import android.media.MediaRecorder
 import java.io.File
 
-class AppVoiceRecorder {
+class AVRecorder {
 
 
     private val mMediaRecorder = MediaRecorder()

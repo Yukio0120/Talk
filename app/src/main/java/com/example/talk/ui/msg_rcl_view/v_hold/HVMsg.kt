@@ -7,13 +7,13 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.example.talk.db.CURRENT_UID
 import com.example.talk.ui.msg_rcl_view.views.MessageView
-import com.example.talk.utilits.AppVoicePlayer
+import com.example.talk.utilits.AVPlayer
 import com.example.talk.utilits.asTime
 import kotlinx.android.synthetic.main.msg_i_voice.view.*
 
 class HVMsg(view: View) : RecyclerView.ViewHolder(view), MsgHolder {
 
-    private val mAppVoicePlayer = AppVoicePlayer()
+    private val mAppVoicePlayer = AVPlayer()
 
     private val blocReceivedVoiceMessage: ConstraintLayout = view.bloc_received_voice_message
     private val blocUserVoiceMessage: ConstraintLayout = view.bloc_user_voice_message

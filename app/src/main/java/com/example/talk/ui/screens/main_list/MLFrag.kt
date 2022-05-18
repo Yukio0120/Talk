@@ -59,7 +59,7 @@ class MLFrag : Fragment(R.layout.fragment_main_list) {
                         val tempList = dataSnapshot2.children.map { it.getCommonModel() }
 
                         if (tempList.isEmpty()){
-                            newModel.lastMessage = "Чат очищен"
+                            newModel.lastMessage = getString(R.string.chat_empty)
                         } else {
                             newModel.lastMessage = tempList[0].text
                         }

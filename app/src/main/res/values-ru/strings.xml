@@ -37,7 +37,7 @@
     <string name="input_name_group">Введите название группы</string>
     <string name="add_user_in_group">Добавить участника</string>
     <string name="chat_empty">Чат пуст</string>
-
+    <string name="record">Запись</string>
 
     <plurals name="count_members">
         <item quantity="one">%d участник</item>

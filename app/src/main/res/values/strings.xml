@@ -37,6 +37,7 @@
     <string name="create_group">Create group</string>
     <string name="input_name_group">Enter name group</string>
     <string name="add_user_in_group">Add members</string>
+    <string name="record">Record</string>
 
 
     <plurals name="count_members">

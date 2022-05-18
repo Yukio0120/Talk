@@ -45,7 +45,7 @@ class GChatFragment(private val group: CommonModel) :
     private var mSmoothScrollToPosition = true
     private lateinit var mSwipeRefreshLayout: SwipeRefreshLayout
     private lateinit var mLayoutManager: LinearLayoutManager
-    private lateinit var mAppVoiceRecorder: AppVoiceRecorder
+    private lateinit var mAppVoiceRecorder: AVRecorder
     private lateinit var mBottomSheetBehavior: BottomSheetBehavior<*>
 
     override fun onResume() {
@@ -60,12 +60,12 @@ class GChatFragment(private val group: CommonModel) :
         setHasOptionsMenu(true)
         mBottomSheetBehavior= BottomSheetBehavior.from(bottom_sheet_choice)
         mBottomSheetBehavior.state = BottomSheetBehavior.STATE_HIDDEN
-        mAppVoiceRecorder = AppVoiceRecorder()
+        mAppVoiceRecorder = AVRecorder()
         mSwipeRefreshLayout = chat_swipe_refresh
         mLayoutManager = LinearLayoutManager(this.context)
         chat_input_message.addTextChangedListener(AppTextWatcher {
             val string = chat_input_message.text.toString()
-            if (string.isEmpty() || string == "Запись") {
+            if (string.isEmpty() || string == getString(R.string.record)) {
                 chat_btn_send.visibility = View.GONE
                 chat_btn_attach.visibility = View.VISIBLE
                 chat_btn_voice.visibility = View.VISIBLE
@@ -83,7 +83,7 @@ class GChatFragment(private val group: CommonModel) :
                 if (checkPermission(RECORD_AUDIO)) {
                     if (event.action == MotionEvent.ACTION_DOWN) {
                         //TODO record
-                        chat_input_message.setText("Запись")
+                        chat_input_message.setText(getString(R.string.record))
                         chat_btn_voice.setColorFilter(
                             ContextCompat.getColor(
                                 APP_ACTIVITY,
@@ -205,7 +205,7 @@ class GChatFragment(private val group: CommonModel) :
             mSmoothScrollToPosition = true
             val message = chat_input_message.text.toString()
             if (message.isEmpty()) {
-                showToast("ВВедите сообщение")
+                showToast(getString(R.string.enter_message))
             } else sendMessageToGroup(
                 message,
                 group.id,
@@ -269,19 +269,19 @@ class GChatFragment(private val group: CommonModel) :
 
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        /* Создания выпадающего меню*/
+
         activity?.menuInflater?.inflate(R.menu.schat_action_menu, menu)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        /* Слушатель выбора пунктов выпадающего меню */
+
         when (item.itemId) {
             R.id.btn_clean_chat -> clearChat(group.id){
-                showToast("Чат очищен")
+                showToast(getString(R.string.chat_clear_text))
                 replaceFragment(MLFrag())
             }
             R.id.btn_delete_chat -> deleteChat(group.id){
-                showToast("Чат удален")
+                showToast(getString(R.string.chat_delete_text))
                 replaceFragment(MLFrag())
             }
         }

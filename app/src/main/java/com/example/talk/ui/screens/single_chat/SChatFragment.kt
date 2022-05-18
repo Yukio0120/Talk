@@ -45,7 +45,7 @@ class SChatFragment(private val contact: CommonModel) :
     private var mSmoothScrollToPosition = true
     private lateinit var mSwipeRefreshLayout: SwipeRefreshLayout
     private lateinit var mLayoutManager: LinearLayoutManager
-    private lateinit var mAppVoiceRecorder: AppVoiceRecorder
+    private lateinit var mAppVoiceRecorder: AVRecorder
     private lateinit var mBottomSheetBehavior: BottomSheetBehavior<*>
 
 
@@ -65,7 +65,7 @@ class SChatFragment(private val contact: CommonModel) :
         setHasOptionsMenu(true)
         mBottomSheetBehavior= BottomSheetBehavior.from(bottom_sheet_choice)
         mBottomSheetBehavior.state = BottomSheetBehavior.STATE_HIDDEN
-        mAppVoiceRecorder = AppVoiceRecorder()
+        mAppVoiceRecorder = AVRecorder()
         mSwipeRefreshLayout = chat_swipe_refresh
         mLayoutManager = LinearLayoutManager(this.context)
         chat_input_message.addTextChangedListener(AppTextWatcher {

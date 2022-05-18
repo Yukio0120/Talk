@@ -4,7 +4,7 @@ import android.media.MediaPlayer
 import com.example.talk.db.getFileFromStorage
 import java.io.File
 
-class AppVoicePlayer {
+class AVPlayer {
     private lateinit var mMediaPlayer: MediaPlayer
     private lateinit var mFile: File
 
