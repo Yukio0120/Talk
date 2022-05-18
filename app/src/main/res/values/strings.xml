@@ -47,8 +47,7 @@
     </plurals>
 
 
-
-<!--    navbar   -->
+    <!--    navbar   -->
     <string name="navbar_group">Create group</string>
     <string name="navbar_contacts">Contacts</string>
     <string name="navbar_calendar">Calendar</string>

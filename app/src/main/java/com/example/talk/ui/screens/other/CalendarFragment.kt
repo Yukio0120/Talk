@@ -3,12 +3,12 @@ package com.example.talk.ui.screens.other
 import android.widget.CalendarView
 import android.widget.TextView
 import com.example.talk.R
-import com.example.talk.ui.screens.base.BaseFragment
+import com.example.talk.ui.screens.base.BFrag
 import com.example.talk.utilits.APP_ACTIVITY
 import kotlinx.android.synthetic.main.fragment_calendar.*
 
 
-class CalendarFragment : BaseFragment(R.layout.fragment_calendar) {
+class CalendarFragment : BFrag(R.layout.fragment_calendar) {
     private lateinit var calendarView: CalendarView
     private lateinit var dateView: TextView
 

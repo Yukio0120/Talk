@@ -12,7 +12,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.talk.MainActivity
 import com.example.talk.R
-import com.example.talk.database.updatePhonesToDatabase
+import com.example.talk.db.updatePhonesToDatabase
 import com.example.talk.models.CommonModel
 import com.squareup.picasso.Picasso
 import java.text.SimpleDateFormat

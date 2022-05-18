@@ -6,15 +6,15 @@ import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import com.example.talk.R
-import com.example.talk.database.*
-import com.example.talk.ui.screens.base.BaseFragment
+import com.example.talk.db.*
+import com.example.talk.ui.screens.base.BFrag
 import com.example.talk.utilits.*
 import com.theartofdev.edmodo.cropper.CropImage
 import com.theartofdev.edmodo.cropper.CropImageView
 import kotlinx.android.synthetic.main.fragment_settings.*
 
 
-class SettingsFragment : BaseFragment(R.layout.fragment_settings) {
+class SettingsFragment : BFrag(R.layout.fragment_settings) {
 
     override fun onResume() {
         super.onResume()
@@ -29,10 +29,10 @@ class SettingsFragment : BaseFragment(R.layout.fragment_settings) {
         settings_state.text = USER.state
         settings_username.text = USER.username
         settings_btn_change_username.setOnClickListener {
-            replaceFragment(ChangeUsernameFragment())
+            replaceFragment(CUsernameFrag())
         }
         settings_btn_change_bio.setOnClickListener {
-            replaceFragment(ChangeBioFragment())
+            replaceFragment(CBioFrag())
         }
         settings_btn_change_photo.setOnClickListener {
             changePhotoUser()
@@ -60,7 +60,7 @@ class SettingsFragment : BaseFragment(R.layout.fragment_settings) {
                 AUTH.signOut()
                 restartActivity()
             }
-            R.id.settings_menu_change_name -> replaceFragment(ChangeNameFragment())
+            R.id.settings_menu_change_name -> replaceFragment(CNameFrag())
         }
         return true
     }

@@ -1,6 +1,6 @@
 package com.example.talk.utilits
 
-import com.example.talk.database.*
+import com.example.talk.db.*
 
 enum class AppStates(val state:String) {
     ONLINE("в сети"),

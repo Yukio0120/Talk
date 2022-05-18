@@ -5,13 +5,13 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.content.ContextCompat
-import com.example.talk.database.AUTH
-import com.example.talk.database.initFirebase
-import com.example.talk.database.initUser
+import com.example.talk.db.AUTH
+import com.example.talk.db.initFirebase
+import com.example.talk.db.initUser
 import com.example.talk.databinding.ActivityMainBinding
-import com.example.talk.ui.screens.main_list.MainListFragment
-import com.example.talk.ui.screens.register.EnterPhoneNumberFragment
-import com.example.talk.ui.objects.AppDrawer
+import com.example.talk.ui.screens.main_list.MLFrag
+import com.example.talk.ui.screens.register.EPNFrag
+import com.example.talk.ui.objects.ADrawer
 import com.example.talk.utilits.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -20,7 +20,7 @@ import kotlinx.coroutines.launch
 class MainActivity : AppCompatActivity() {
 
     private lateinit var mBinding: ActivityMainBinding
-    lateinit var mAppDrawer: AppDrawer
+    lateinit var mAppDrawer: ADrawer
     lateinit var mToolbar: Toolbar
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,16 +44,16 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(mToolbar)
         if (AUTH.currentUser != null) {
             mAppDrawer.create()
-            replaceFragment(MainListFragment(), false)
+            replaceFragment(MLFrag(), false)
         } else {
-            replaceFragment(EnterPhoneNumberFragment(), false)
+            replaceFragment(EPNFrag(), false)
         }
     }
 
 
     private fun initFields() {
         mToolbar = mBinding.mainToolbar
-        mAppDrawer = AppDrawer()
+        mAppDrawer = ADrawer()
 
     }
 

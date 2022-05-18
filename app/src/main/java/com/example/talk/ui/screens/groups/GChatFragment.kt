@@ -10,12 +10,12 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.example.talk.R
-import com.example.talk.database.*
+import com.example.talk.db.*
 import com.example.talk.models.CommonModel
 import com.example.talk.models.UserModel
-import com.example.talk.ui.screens.base.BaseFragment
-import com.example.talk.ui.msg_recycle_view.views.AppViewFactory
-import com.example.talk.ui.screens.main_list.MainListFragment
+import com.example.talk.ui.screens.base.BFrag
+import com.example.talk.ui.msg_rcl_view.views.AppViewFactory
+import com.example.talk.ui.screens.main_list.MLFrag
 import com.example.talk.utilits.*
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.firebase.database.DatabaseReference
@@ -30,7 +30,7 @@ import kotlinx.coroutines.launch
 
 
 class GChatFragment(private val group: CommonModel) :
-    BaseFragment(R.layout.fragment_s_chat) {
+    BFrag(R.layout.fragment_s_chat) {
 
     private lateinit var mListenerInfoToolbar: AppValueEventListener
     private lateinit var mReceivingUser: UserModel
@@ -278,11 +278,11 @@ class GChatFragment(private val group: CommonModel) :
         when (item.itemId) {
             R.id.btn_clean_chat -> clearChat(group.id){
                 showToast("Чат очищен")
-                replaceFragment(MainListFragment())
+                replaceFragment(MLFrag())
             }
             R.id.btn_delete_chat -> deleteChat(group.id){
                 showToast("Чат удален")
-                replaceFragment(MainListFragment())
+                replaceFragment(MLFrag())
             }
         }
         return true

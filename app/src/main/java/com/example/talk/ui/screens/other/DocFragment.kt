@@ -4,12 +4,12 @@ import android.annotation.SuppressLint
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import com.example.talk.R
-import com.example.talk.ui.screens.base.BaseFragment
+import com.example.talk.ui.screens.base.BFrag
 import com.example.talk.utilits.APP_ACTIVITY
 import kotlinx.android.synthetic.main.fragment_doc.*
 
 
-class DocFragment : BaseFragment(R.layout.fragment_doc) {
+class DocFragment : BFrag(R.layout.fragment_doc) {
     private lateinit var webView: WebView
 
     override fun onResume() {

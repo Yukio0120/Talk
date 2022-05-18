@@ -1,8 +1,7 @@
 package com.example.talk.utilits
 
 import android.media.MediaPlayer
-import com.example.talk.database.REF_STORAGE_ROOT
-import com.example.talk.database.getFileFromStorage
+import com.example.talk.db.getFileFromStorage
 import java.io.File
 
 class AppVoicePlayer {
