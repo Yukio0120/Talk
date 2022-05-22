@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="normalText">16sp</dimen>
+    <dimen name="settingText">28sp</dimen>
+    <dimen name="settingNText">24sp</dimen>
+    <dimen name="settingSmallText">18sp</dimen>
     <dimen name="app_margin">16dp</dimen>
     <dimen name="app_small_margin">10dp</dimen>
     <dimen name="smallText">14sp</dimen>
@@ -10,6 +13,8 @@
 <!--    settings    -->
     <dimen name="settings_user_photo_width">65dp</dimen>
     <dimen name="settings_user_photo_height">65dp</dimen>
+    <dimen name="set_user_photo_width">150dp</dimen>
+    <dimen name="set_user_photo_height">150dp</dimen>
     <dimen name="settings_btn_change_photo_width">55dp</dimen>
     <dimen name="settings_btn_change_photo_height">55dp</dimen>
     <dimen name="settings_ripple_effect_radius">4dp</dimen>

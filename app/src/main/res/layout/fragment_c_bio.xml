@@ -5,17 +5,45 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.screens.settings.CBioFrag">
+<TextView
+    android:id="@+id/setting_edit_bio"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:textColor="@color/black"
+    android:text="@string/settings_default_bio"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="@dimen/app_margin"
+    android:textSize="@dimen/settingText"
+    />
 
     <EditText
         android:id="@+id/settings_input_bio"
         style="@style/editText"
-        android:hint="@string/settings_label_bio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:background="@drawable/corner"
+        android:elevation="4dp"
+        android:hint="@string/settings_label_bio"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/setting_edit_bio" />
+
+    <TextView
+        android:id="@+id/setting_edit_label_bio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/settings_label_bio"
+        app:layout_constraintTop_toBottomOf="@+id/settings_input_bio"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/app_margin"
+        android:layout_marginTop="@dimen/app_small_margin"
+        android:textSize="@dimen/normalText"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

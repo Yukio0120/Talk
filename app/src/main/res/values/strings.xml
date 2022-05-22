@@ -7,9 +7,9 @@
     <string name="settings_default_number">+71111111111</string>
     <string name="settings_label_phone">Tap to change phone number</string>
     <string name="settings_default_username">press f</string>
-    <string name="settings_label_username">Username</string>
+    <string name="settings_label_username">Tap to change username</string>
     <string name="settings_default_bio">About</string>
-    <string name="settings_label_bio">bio</string>
+    <string name="settings_label_bio">Write a little about yourself</string>
     <string name="settings_menu_change_name">Change name</string>
     <string name="settings_menu_exit">Exit</string>
     <string name="cd_next">next</string>

@@ -7,7 +7,7 @@
     <string name="settings_default_number">+71111111111</string>
     <string name="settings_label_phone">Нажмите, чтобы изменить номер телефона</string>
     <string name="settings_default_username">press f</string>
-    <string name="settings_label_username">Имя пользователя</string>
+    <string name="settings_label_username">Нажмите, чтобы изменить имя пользователя</string>
     <string name="settings_default_bio">О себе</string>
     <string name="settings_label_bio">Напишите немного о себе</string>
     <string name="settings_menu_change_name">Изменить имя</string>

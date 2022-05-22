@@ -4,7 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     style="@style/settingsButtons"
-    android:layout_margin="@dimen/app_margin"
+    android:layout_margin="5dp"
+    android:background="@drawable/corner"
+    android:elevation="4dp"
+    android:padding="@dimen/appPadding"
     android:layout_height="wrap_content">
 
     <de.hdodenhof.circleimageview.CircleImageView

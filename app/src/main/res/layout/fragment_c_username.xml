@@ -5,16 +5,30 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.screens.settings.CUsernameFrag">
-
+    <TextView
+        android:id="@+id/setting_edit_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="@string/settings_hint_input_username"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/app_margin"
+        android:textSize="@dimen/settingText"
+        />
     <EditText
         android:id="@+id/settings_input_username"
         style="@style/editText"
         android:hint="@string/settings_hint_input_username"
+        android:background="@drawable/corner"
+        android:elevation="4dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setting_edit_username"
         android:autofillHints="" />
 </androidx.constraintlayout.widget.ConstraintLayout>

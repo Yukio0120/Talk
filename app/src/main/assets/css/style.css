@@ -1,105 +1,135 @@
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
-    display: block;
+body{margin-top:20px;
+background:#eee;
 }
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="number"],
-textarea {
-    -webkit-appearance : none;
-    -moz-appearance    : none;
-    -ms-appearance     : none;
-    appearance         : none;
-    outline            : 0;
-    box-shadow         : none;
+.single_advisor_profile {
+    position: relative;
+    margin-bottom: 50px;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    z-index: 1;
+    border-radius: 15px;
+    -webkit-box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
+    box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
 }
-
-html {
-    -webkit-text-size-adjust : none;
-    text-size-adjust         : none
-}
-#pagewrap {
-    width: 980px;
+.single_advisor_profile .advisor_thumb {
+    position: relative;
+    z-index: 1;
+    border-radius: 15px 15px 0 0;
     margin: 0 auto;
- }
- #header {
-    height: 160px;
- }
- #content {
-    width: 600px;
-    float: left;
- }
- #sidebar {
-    width: 280px;
-    float: right;
- }
- #footer {
-    clear: both;
- }
+    padding: 30px 30px 0 30px;
+    background-color: #60C5A2;
+    overflow: hidden;
+}
+.single_advisor_profile .advisor_thumb::after {
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    position: absolute;
+    width: 150%;
+    height: 80px;
+    bottom: -45px;
+    left: -25%;
+    content: "";
+    background-color: #ffffff;
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+}
+@media only screen and (max-width: 575px) {
+    .single_advisor_profile .advisor_thumb::after {
+        height: 160px;
+        bottom: -90px;
+    }
+}
+.single_advisor_profile .advisor_thumb .social-info {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    bottom: 0;
+    right: 30px;
+    text-align: right;
+}
+.single_advisor_profile .advisor_thumb .social-info a {
+    font-size: 22px;
+    color: #020710;
+    padding: 0 5px;
 
- @media screen and (max-width: 980px) {
-    #pagewrap {
-       width: 95%;
+}
+.single_advisor_profile .advisor_thumb .social-info a:hover,
+.single_advisor_profile .advisor_thumb .social-info a:focus {
+    color: teal;
+}
+.single_advisor_profile .advisor_thumb .social-info a:last-child {
+    padding-right: 0;
+}
+.single_advisor_profile .single_advisor_details_info {
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+    text-align: right;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    border-radius: 0 0 15px 15px;
+    background-color: #ffffff;
+}
+.single_advisor_profile .single_advisor_details_info::after {
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    position: absolute;
+    z-index: 1;
+    width: 50px;
+    height: 3px;
+    background-color: #60C5A2;
+    content: "";
+    top: 12px;
+    right: 30px;
+}
+.single_advisor_profile .single_advisor_details_info h3 {
+    margin-bottom: 0.25rem;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .single_advisor_profile .single_advisor_details_info h3 {
+        font-size: 14px;
     }
-    #content {
-       width: 60%;
-       padding: 3% 4%;
+}
+.single_advisor_profile .single_advisor_details_info p {
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .single_advisor_profile .single_advisor_details_info p {
+        font-size: 12px;
     }
-    #sidebar {
-       width: 30%;
-    }
-    #sidebar .widget {
-       padding: 8% 7%;
-       margin-bottom: 10px;
-    }
- }
-  
- @media screen and (max-width: 650px) {
-    #header {
-       height: auto;
-    }
-    #searchform {
-       position: absolute;
-       top: 5px;
-       right: 0;
-    }
-    #main-nav {
-       position: static;
-    }
-    #site-logo {
-       margin: 15px 100px 5px 0;
-       position: static;
-    }
-    #site-description {
-       margin: 0 0 15px;
-       position: static;
-    }
-    #content {
-       width: auto;
-       float: none;
-       margin: 20px 0;
-    }
-    #sidebar {
-       width: 100%;
-       float: none;
-       margin: 0;
-    }
- }
-
- @media screen and (max-width: 480px) {
-    html {
-       -webkit-text-size-adjust: none;
-    }
-    #main-nav a {
-       font-size: 90%;
-       padding: 10px 8px;
-    }
- }
- 
- img {
-    max-width: 100%;
-    height: auto;
-    width: auto\9; /* ie8 */
- }
- 
+}
+.single_advisor_profile:hover .advisor_thumb::after,
+.single_advisor_profile:focus .advisor_thumb::after {
+    background-color: #006564;
+}
+.single_advisor_profile:hover .advisor_thumb .social-info a,
+.single_advisor_profile:focus .advisor_thumb .social-info a {
+    color: #ffffff;
+}
+.single_advisor_profile:hover .advisor_thumb .social-info a:hover,
+.single_advisor_profile:hover .advisor_thumb .social-info a:focus,
+.single_advisor_profile:focus .advisor_thumb .social-info a:hover,
+.single_advisor_profile:focus .advisor_thumb .social-info a:focus {
+    color: #ffffff;
+}
+.single_advisor_profile:hover .single_advisor_details_info,
+.single_advisor_profile:focus .single_advisor_details_info {
+    background-color: #006564;
+}
+.single_advisor_profile:hover .single_advisor_details_info::after,
+.single_advisor_profile:focus .single_advisor_details_info::after {
+    background-color: #ffffff;
+}
+.single_advisor_profile:hover .single_advisor_details_info h3,
+.single_advisor_profile:focus .single_advisor_details_info h3 {
+    color: #ffffff;
+}
+.single_advisor_profile:hover .single_advisor_details_info p,
+.single_advisor_profile:focus .single_advisor_details_info p {
+    color: #ffffff;
+}
