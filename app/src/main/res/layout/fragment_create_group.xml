@@ -45,7 +45,7 @@
         android:id="@+id/create_group_btn_complete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_done"
+        android:src="@drawable/ic_confirm_check"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="@dimen/app_margin"
         app:layout_constraintBottom_toBottomOf="parent"

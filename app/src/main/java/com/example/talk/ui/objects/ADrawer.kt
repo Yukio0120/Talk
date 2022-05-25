@@ -12,7 +12,9 @@ import com.example.talk.ui.screens.contacts.CFrag
 import com.example.talk.ui.screens.groups.AContFrag
 import com.example.talk.ui.screens.other.CalendarFragment
 import com.example.talk.ui.screens.other.DocFragment
-import com.example.talk.ui.screens.other.GuideFragment
+import com.example.talk.ui.screens.guide.GuideFragment
+import com.example.talk.ui.screens.other.DstuF
+import com.example.talk.ui.screens.other.StudCity
 import com.example.talk.ui.screens.settings.SettingsFragment
 import com.example.talk.utilits.downloadAndSetImage
 import com.example.talk.utilits.replaceFragment
@@ -81,23 +83,36 @@ class ADrawer() {
                     .withIconTintingEnabled(true)
                     .withName(R.string.navbar_calendar)
                     .withSelectable(false)
-                    .withIcon(R.drawable.ic_calendar),
+                    .withIcon(R.drawable.ic_menu_calendar),
                 PrimaryDrawerItem().withIdentifier(106)
+                    .withIconTintingEnabled(true)
+                    .withName(R.string.dstu_site)
+                    .withSelectable(false)
+                    .withIcon(R.drawable.ic_menu_about_dom),
+                PrimaryDrawerItem().withIdentifier(107)
+                    .withIconTintingEnabled(true)
+                    .withName(R.string.stud_site)
+                    .withSelectable(false)
+                    .withIcon(R.drawable.ic_menu_city),
+                PrimaryDrawerItem().withIdentifier(108)
                     .withIconTintingEnabled(true)
                     .withName(R.string.navbar_settings)
                     .withSelectable(false)
                     .withIcon(R.drawable.ic_menu_settings),
+
                 DividerDrawerItem(),
+
                 PrimaryDrawerItem().withIdentifier(109)
                     .withIconTintingEnabled(true)
                     .withName(R.string.navbar_guide)
                     .withSelectable(false)
-                    .withIcon(R.drawable.ic_menu_help),
-                PrimaryDrawerItem().withIdentifier(109)
+                    .withIcon(R.drawable.ic_menu_guide),
+                PrimaryDrawerItem().withIdentifier(110)
                     .withIconTintingEnabled(true)
                     .withName(R.string.navbar_doc)
                     .withSelectable(false)
-                    .withIcon(R.drawable.ic_doc)
+                    .withIcon(R.drawable.ic_menu_doc)
+
             ).withOnDrawerItemClickListener(object : Drawer.OnDrawerItemClickListener {
                 override fun onItemClick(
                     view: View?,
@@ -115,9 +130,12 @@ class ADrawer() {
             1 -> replaceFragment(AContFrag())
             2 -> replaceFragment(CFrag())
             3 -> replaceFragment(CalendarFragment())
-            4 -> replaceFragment(SettingsFragment())
-            6 -> replaceFragment(GuideFragment())
-            7 -> replaceFragment(DocFragment())
+            4 -> replaceFragment(DstuF())
+            5 -> replaceFragment(StudCity())
+            6 -> replaceFragment(SettingsFragment())
+            // ----- //
+            8 -> replaceFragment(GuideFragment())
+            9 -> replaceFragment(DocFragment())
         }
     }
 

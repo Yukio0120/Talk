@@ -20,6 +20,7 @@
             android:layout_width="@dimen/chat_btn_width"
             android:layout_height="@dimen/chat_btn_height"
             android:src="@drawable/ic_play_teal"
+            android:layout_marginStart="@dimen/app_small_margin"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -59,6 +60,7 @@
             android:id="@+id/chat_user_btn_play"
             android:layout_width="@dimen/chat_btn_width"
             android:layout_height="@dimen/chat_btn_height"
+            android:layout_marginStart="@dimen/app_small_margin"
             android:src="@drawable/ic_play_white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -70,6 +72,7 @@
             android:layout_height="@dimen/chat_btn_height"
             android:src="@drawable/ic_stop_white"
             android:visibility="gone"
+            android:layout_marginStart="@dimen/app_small_margin"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

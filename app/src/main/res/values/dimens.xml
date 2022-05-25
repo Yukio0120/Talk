@@ -26,8 +26,8 @@
     <dimen name="chat_image_height">180dp</dimen>
     <dimen name="chat_common_width">180dp</dimen>
     <dimen name="chat_common_height">50dp</dimen>
-    <dimen name="chat_btn_width">50dp</dimen>
-    <dimen name="chat_btn_height">50dp</dimen>
+    <dimen name="chat_btn_width">35dp</dimen>
+    <dimen name="chat_btn_height">35dp</dimen>
     <dimen name="bottom_sheet_height">70dp</dimen>
     <dimen name="btn_bottom_sheet_width">50dp</dimen>
 </resources>

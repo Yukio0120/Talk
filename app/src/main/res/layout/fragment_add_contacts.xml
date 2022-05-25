@@ -22,5 +22,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="@dimen/app_margin"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:backgroundTint="@color/teal"/>
+        android:backgroundTint="@color/teal"
+        android:contentDescription="@string/cd_register_image" />
 </androidx.constraintlayout.widget.ConstraintLayout>

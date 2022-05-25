@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_margin="@dimen/app_small_margin"
+    card_view:cardBackgroundColor="@color/white"
+    card_view:cardCornerRadius="20dp"
+    card_view:cardElevation="6dp"
+    card_view:contentPadding="@dimen/appPadding"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/appPadding">
+
+        <ImageView
+            android:id="@+id/card_item_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/cd_register_image" />
+
+        <TextView
+            android:id="@+id/card_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/card_item_img"
+            android:text="@string/name_item"
+            android:layout_marginStart="@dimen/app_small_margin"
+            android:textColor="@color/teal_dark"
+            android:textStyle="bold"
+            android:textSize="@dimen/settingSmallText"/>
+
+        <TextView
+            android:id="@+id/card_item_pos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_item_title"
+            android:layout_marginStart="@dimen/app_small_margin"
+            android:layout_toEndOf="@+id/card_item_img"
+            android:text="@string/name_item"
+            android:textColor="@color/teal_dark"
+            android:textSize="@dimen/smallText" />
+        <TextView
+            android:id="@+id/card_item_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_item_pos"
+            android:layout_marginStart="@dimen/app_small_margin"
+            android:layout_toEndOf="@+id/card_item_img"
+            android:text="@string/name_item"
+            android:textColor="@color/teal"
+            android:textSize="@dimen/smallText" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

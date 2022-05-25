@@ -11,7 +11,7 @@
     <string name="settings_default_bio">About</string>
     <string name="settings_label_bio">Write a little about yourself</string>
     <string name="settings_menu_change_name">Change name</string>
-    <string name="settings_menu_exit">Exit</string>
+    <string name="settings_menu_exit"> Sign out</string>
     <string name="cd_next">next</string>
     <string name="cd_register_image">register_image</string>
     <string name="register_text_enter_code">Enter code</string>
@@ -61,5 +61,18 @@
     <string name="chat_delete_text">Chat delete</string>
     <string name="nickname_exists">This nickname already exists</string>
     <string name="enter_name">Enter name</string>
+    <string name="card_call_book_name">Phone book</string>
+    <string name="card_about_dom_name">About dormitory </string>
+    <string name="url"> <a href="https://maps.google.com?saddr=Current+Location&#38;daddr=47.1411.6,39.4242">sq.Gagarina 1</a></string>
+    <string name="administration">Administration</string>
+    <string name="dstu_site">DSTU</string>
+    <string name="stud_site">StudCity</string>
+    <string name="number_phone_dom">+7(863)238-17-57</string>
+    <string name="email_url">spu-08.5.13@donstu.ru</string>
+    <string name="vk_url"> <a href="https://vk.com/desyatochka_dstu">VKontakte</a></string>
+    <string name="about_dom_description">Description</string>
+    <string name="about_dom_social">Social</string>
+    <string name="about_dom_Location">Location</string>
+    <string name="dom_phone_number">Number phone</string>
 
 </resources>

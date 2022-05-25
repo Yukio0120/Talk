@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.screens.guide.AllNumberFrag">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/app_small_margin"
+        android:background="@drawable/corner"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/phone_emergency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Телефоны экстренных служб"
+                android:textColor="@color/black"
+                android:textSize="@dimen/settingSmallText"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Пожарная охрана"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normalText"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fireman"
+                style="@style/phone_call_book"
+                android:text="101"
+                tools:ignore="RtlSymmetry" />
+        </TableRow>
+
+        <TableRow
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Полиция"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normalText"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/police"
+                style="@style/phone_call_book"
+                android:text="102"
+                tools:ignore="RtlSymmetry" />
+        </TableRow>
+
+        <TableRow
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Скорая помощь"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normalText"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ambulance"
+                style="@style/phone_call_book"
+                android:text="103"
+                tools:ignore="RtlSymmetry" />
+        </TableRow>
+
+        <TableRow
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Аварийная газовая"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normalText"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/emergency"
+                style="@style/phone_call_book"
+                android:text="104"
+                tools:ignore="RtlSymmetry" />
+        </TableRow>
+
+        <TableRow
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Телефон Доверия"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normalText"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/helpline"
+                style="@style/phone_call_book"
+                android:text="223-41-41"
+                tools:ignore="RtlSymmetry" />
+        </TableRow>
+
+        <TableRow
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Единая служба спасения"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normalText"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/service"
+                style="@style/phone_call_book"
+                android:text="112"
+                tools:ignore="RtlSymmetry" />
+
+        </TableRow>
+
+        <TableRow
+            android:gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/phone_university"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Телефоны служб университета"
+                android:textColor="@color/black"
+                android:textSize="@dimen/settingSmallText"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow android:padding="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Сантехник"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normalText"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/service_one"
+                android:text="273-83-52"
+                style="@style/phone_call_book"
+                tools:ignore="RtlSymmetry" />
+
+        </TableRow>
+
+        <TableRow android:padding="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Электрик"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normalText"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/service_two"
+                android:text="273-87-88"
+                style="@style/phone_call_book"
+                tools:ignore="RtlSymmetry" />
+
+        </TableRow>
+
+        <TableRow android:padding="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Охрана"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normalText"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/service_three"
+                android:text="273-87-54"
+                style="@style/phone_call_book"
+                tools:ignore="RtlSymmetry" />
+        </TableRow>
+
+        <TableRow android:padding="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Медицинский центр АВЕ-ВИТА"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normalText"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/service_four"
+                android:text="298-34-54: 238-17-46"
+                style="@style/phone_call_book"
+                tools:ignore="RtlSymmetry" />
+        </TableRow>
+
+        <TableRow android:padding="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ППОО"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normalText"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/service_five"
+                android:text="273-85-05"
+                style="@style/phone_call_book"
+                tools:ignore="RtlSymmetry" />
+        </TableRow>
+
+        <TableRow android:padding="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Студсовет"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normalText"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/service_six"
+                android:text="238-15-87"
+                style="@style/phone_call_book"
+                tools:ignore="RtlSymmetry" />
+        </TableRow>
+
+        <TableRow android:padding="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Студгородок"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normalText"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/service_seven"
+                android:text="273-85-85"
+                style="@style/phone_call_book"
+                tools:ignore="RtlSymmetry" />
+        </TableRow>
+
+        <TableRow android:padding="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Вахта"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normalText"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/service_eight"
+                android:text="273-17-55"
+                style="@style/phone_call_book"
+                tools:ignore="RtlSymmetry" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

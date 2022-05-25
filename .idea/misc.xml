@@ -4,23 +4,83 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable-v24/bg_other_user_mg.xml" value="0.191" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/address-book_24.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/angle-right_24.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/angle-small-right_24.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/bank_24.xml" value="0.154" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/bg_user_mg.xml" value="0.191" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/book-alt_24.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/broom_24.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/building_24.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/calendar_24.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/check_24.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/clip_24.xml" value="0.154" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/corner.xml" value="0.143" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/document-signed_24.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/document_24.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/email.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/envelope_24.xml" value="0.154" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/header.xml" value="0.1785" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/ic_about_dom.xml" value="0.143" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/ic_attach.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/ic_attach_file.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/ic_attach_image.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/ic_baseline_send_24.xml" value="0.154" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/ic_btn_action_menu.xml" value="0.1435" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/ic_btn_action_menu_change_name.xml" value="0.1435" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/ic_btn_action_menu_exit.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/ic_btn_next.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/ic_call_book.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/ic_check.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/ic_clean_chat.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/ic_confirm_check.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/ic_delete_chat.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/ic_done.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/ic_file_green.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/ic_file_white.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/ic_launcher_background.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/ic_menu_about_dom.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/ic_menu_doc.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/ic_menu_guide.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/ic_menu_help.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/ic_menu_settings.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/ic_play_teal.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/ic_play_white.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/ic_stop_teal.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/ic_stop_white.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/ic_voice.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/interrogation_24.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/menu-dots-vertical_24.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/microphone_24.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/paper-plane_24.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/pencil_24.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/picture_24.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/play_24.xml" value="0.154" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/ripple_effect.xml" value="0.1775" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/settings_24.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/sign-out_24.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/stop_24.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/trash_24.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/user_24.xml" value="0.154" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/drawable/users_24.xml" value="0.154" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/activity_main.xml" value="0.176" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/activity_register.xml" value="0.2115036231884058" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/add_contacts.xml" value="0.2115036231884058" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/add_contacts_item.xml" value="0.264" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/card_item.xml" value="0.2" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/card_view_full.xml" value="0.23867753623188406" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/choice_upload.xml" value="0.1625" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/contact_item.xml" value="0.24048913043478262" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/fragment_about_dom.xml" value="0.264" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/fragment_add_contacts.xml" value="0.2115036231884058" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/fragment_admins.xml" value="0.20969202898550723" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/fragment_all_number.xml" value="0.264" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/fragment_all_numver.xml" value="0.23697916666666666" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/fragment_c_bio.xml" value="0.20969202898550723" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/fragment_c_username.xml" value="0.20969202898550723" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/fragment_calendar.xml" value="0.23324275362318841" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/fragment_call_number.xml" value="0.11302083333333333" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/fragment_change_bio.xml" value="0.24048913043478262" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/fragment_change_name.xml" value="0.264" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/fragment_change_username.xml" value="0.24048913043478262" />
@@ -29,6 +89,7 @@
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/fragment_create_group.xml" value="0.264" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/fragment_create_group2.xml" value="0.20969202898550723" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/fragment_doc.xml" value="0.2115036231884058" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/fragment_dstu.xml" value="0.20969202898550723" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/fragment_ecode.xml" value="0.20969202898550723" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/fragment_enter_code.xml" value="0.2115036231884058" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/fragment_enter_phone_number.xml" value="0.4" />
@@ -37,6 +98,7 @@
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/fragment_main_list.xml" value="0.11296859169199595" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/fragment_s_chat.xml" value="0.17374517374517376" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/fragment_settings.xml" value="0.264" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/fragment_stud_city.xml" value="0.23867753623188406" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/guide_item.xml" value="0.264" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/main_list_item.xml" value="0.2115036231884058" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/message_item.xml" value="0.24048913043478262" />
@@ -44,8 +106,12 @@
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/message_item_image.xml" value="0.2115036231884058" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/message_item_text.xml" value="0.2115036231884058" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/message_item_voice.xml" value="0.264" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/msg_i_file.xml" value="0.536" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/msg_i_image.xml" value="0.23867753623188406" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/msg_i_text.xml" value="0.23867753623188406" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/msg_i_voice.xml" value="0.20969202898550723" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/layout/toolbar_info.xml" value="0.2" />
+        <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/menu/scard_action_menu.xml" value="0.25104166666666666" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/menu/schat_action_menu.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/menu/settings_action_menu.xml" value="0.23229166666666667" />
         <entry key="..\:/Users/yukio/AndroidStudioProjects/Talk/app/src/main/res/menu/settings_menu_confirm.xml" value="0.25104166666666666" />

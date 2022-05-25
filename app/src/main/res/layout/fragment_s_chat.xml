@@ -55,6 +55,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/chat_input_message"
             android:contentDescription="@string/cd_register_image" />
+
         <ImageView
             android:id="@+id/chat_btn_attach"
             android:layout_width="50dp"

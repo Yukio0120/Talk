@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/admins_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/administration"
+        android:layout_margin="@dimen/app_small_margin"
+        android:padding="@dimen/appPadding"
+        android:textColor="@color/teal_dark"
+        android:textSize="@dimen/settingText"
+        android:elevation="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/corner"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/card_recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@+id/admins_title"
+        tools:layout_editor_absoluteX="0dp"
+        tools:listitem="@layout/card_item" />
+</androidx.constraintlayout.widget.ConstraintLayout>

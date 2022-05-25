@@ -61,4 +61,17 @@
     <string name="nickname_exists">Такой пользователь уже существует</string>
     <string name="enter_name">Введите имя</string>
 
+    <string name="card_call_book_name">Телефонная книга</string>
+    <string name="card_about_dom_name">Об общежитии</string>
+    <string name="administration">Администрация</string>
+    <string name="url"> <a href="https://maps.google.com?saddr=Current+Location&#38;daddr=47.236563,39.712556">пл.Гагарина 1</a></string>
+    <string name="dstu_site">ДГТУ</string>
+    <string name="stud_site">Студгородок</string>
+    <string name="number_phone_dom">+7(863)238-17-57</string>
+    <string name="vk_url"> <a href="https://vk.com/desyatochka_dstu">ВКонтакте</a></string>
+    <string name="email_url">spu-08.5.13@donstu.ru</string>
+    <string name="about_dom_description">Описание</string>
+    <string name="about_dom_social">Социальные сети</string>
+    <string name="about_dom_Location">Адрес общежития</string>
+    <string name="dom_phone_number">Номер телефона</string>
 </resources>

@@ -69,7 +69,6 @@ class CFrag : BFrag(R.layout.fragment_contacts) {
                     if (contact.fullname.isEmpty()){
                         holder.name.text = model.fullname
                     } else holder.name.text = contact.fullname
-
                     holder.status.text = contact.state
                     holder.photo.downloadAndSetImage(contact.photoUrl)
                     holder.itemView.setOnClickListener { replaceFragment(

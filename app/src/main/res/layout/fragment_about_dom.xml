@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.screens.guide.AboutDomFrag">
+
+    <ImageView
+        android:id="@+id/img_dom"
+        android:layout_width="472dp"
+        android:layout_height="258dp"
+        android:contentDescription="@string/cd_register_image"
+        android:src="@drawable/dom10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/app_small_margin"
+        android:background="@drawable/corner"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_dom">
+
+        <TableRow
+            android:gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txt_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/about_dom_description"
+                android:textColor="@color/black"
+                android:textSize="@dimen/settingText"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_dom_Location"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normalText"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/hyperlink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/url"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normalText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </TableRow>
+
+        <TableRow
+
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/dom_phone_number"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normalText"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btn_number_dom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/normalText"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingStart="25dp"
+                android:enabled="true"
+                android:textIsSelectable="true"
+                android:focusable="true"
+                android:longClickable="true"
+                android:text="@string/number_phone_dom"
+                android:textColor="@color/black"
+                tools:ignore="RtlSymmetry" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="@dimen/app_margin"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txt_social"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_dom_social"
+
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="@dimen/settingText"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow android:padding="10dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="22dp"
+                android:layout_weight="6"
+
+                android:contentDescription="@string/cd_register_image"
+                android:src="@drawable/vk">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/vk_link"
+                android:paddingStart="@dimen/appPadding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="@string/vk_url"
+                android:textSize="@dimen/normalText"
+                android:textColor="@color/black">
+            </TextView>
+        </TableRow>
+
+        <TableRow android:padding="10dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="22dp"
+                android:layout_weight="6"
+                android:contentDescription="@string/cd_register_image"
+                android:src="@drawable/email">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/email_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="@dimen/appPadding"
+                android:background="@color/white"
+                android:enabled="true"
+                android:focusable="true"
+                android:longClickable="true"
+                android:text="@string/email_url"
+                android:textColor="@color/black"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/normalText" />
+
+        </TableRow>
+
+
+
+    </TableLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
