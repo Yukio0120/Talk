@@ -32,6 +32,7 @@ class DocFragment : BFrag(R.layout.fragment_doc) {
             }
         }
         webView.loadUrl("file:///android_asset/doc.html")
+
     }
 
 }

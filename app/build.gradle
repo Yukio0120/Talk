@@ -44,7 +44,7 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
     //firebase
-    implementation 'com.google.firebase:firebase-auth:21.0.4'
+    implementation 'com.google.firebase:firebase-auth:21.0.5'
     implementation 'com.google.firebase:firebase-database:20.0.5'
     implementation 'com.google.firebase:firebase-storage:20.0.1'
     testImplementation 'junit:junit:4.13.2'
@@ -75,5 +75,4 @@ dependencies {
 
     // Firebase Messaging
     implementation "com.google.firebase:firebase-messaging:23.0.5"
-
 }

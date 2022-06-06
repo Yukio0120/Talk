@@ -37,6 +37,8 @@
         android:layout_height="wrap_content"
         android:autofillHints=""
         android:gravity="center"
+        android:background="@drawable/corner"
+        android:elevation="4dp"
         android:hint="@string/register_hint_default_phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

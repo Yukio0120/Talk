@@ -15,6 +15,7 @@ import com.example.talk.ui.screens.other.DocFragment
 import com.example.talk.ui.screens.guide.GuideFragment
 import com.example.talk.ui.screens.other.DstuF
 import com.example.talk.ui.screens.other.StudCity
+import com.example.talk.ui.screens.serv.ServiceFrag
 import com.example.talk.ui.screens.settings.SettingsFragment
 import com.example.talk.utilits.downloadAndSetImage
 import com.example.talk.utilits.replaceFragment
@@ -29,7 +30,7 @@ import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem
 import com.mikepenz.materialdrawer.util.AbstractDrawerImageLoader
 import com.mikepenz.materialdrawer.util.DrawerImageLoader
 
-class ADrawer() {
+class ADrawer {
 
     private lateinit var mDrawer: Drawer
     private lateinit var mHeader: AccountHeader
@@ -111,7 +112,12 @@ class ADrawer() {
                     .withIconTintingEnabled(true)
                     .withName(R.string.navbar_doc)
                     .withSelectable(false)
-                    .withIcon(R.drawable.ic_menu_doc)
+                    .withIcon(R.drawable.ic_menu_doc),
+                PrimaryDrawerItem().withIdentifier(110)
+                    .withIconTintingEnabled(true)
+                    .withName(R.string.navbar_services)
+                    .withSelectable(false)
+                    .withIcon(R.drawable.email)
 
             ).withOnDrawerItemClickListener(object : Drawer.OnDrawerItemClickListener {
                 override fun onItemClick(
@@ -136,6 +142,7 @@ class ADrawer() {
             // ----- //
             8 -> replaceFragment(GuideFragment())
             9 -> replaceFragment(DocFragment())
+            10 -> replaceFragment(ServiceFrag())
         }
     }
 

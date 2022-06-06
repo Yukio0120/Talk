@@ -55,6 +55,21 @@
         <item name="android:textColorHint">@color/gray</item>
     </style>
 
+    <style name="editTextServ">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/normalText</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/corner</item>
+       <item name="android:elevation">4dp</item>
+        <item name="android:layout_margin">@dimen/app_small_margin</item>
+        <item name="android:padding">@dimen/appPadding</item>
+        <item name="android:inputType">phone</item>
+        <item name="android:textColorHint">@color/gray</item>
+    </style>
+
     <style name="phone_call_book">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
@@ -67,6 +82,9 @@
         <item name="android:textIsSelectable">true</item>
         <item name="android:focusable">true</item>
         <item name="android:longClickable">true</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="color_black">
         <item name="android:textColor">@color/black</item>
     </style>
 </resources>

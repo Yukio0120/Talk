@@ -54,7 +54,7 @@
     <string name="navbar_calendar">Calendar</string>
     <string name="navbar_settings">Settings</string>
     <string name="navbar_guide">Guide</string>
-    <string name="navbar_doc">Documentation</string>
+    <string name="navbar_doc">Statement</string>
     <string name="enter_message">Enter message</string>
     <string name="Empty">The field should not be empty</string>
     <string name="chat_clear_text">Chat clear</string>
@@ -74,5 +74,15 @@
     <string name="about_dom_social">Social</string>
     <string name="about_dom_Location">Location</string>
     <string name="dom_phone_number">Number phone</string>
+    <string name="add_events_text">Add Events</string>
+    <string name="service_call">Services</string>
+    <string name="phn_hint">Phone number</string>
+    <string name="navbar_services">Service</string>
 
+
+    <string-array name="Service">
+        <item>Сантехник</item>
+        <item>Электрик</item>
+        <item>Интернет</item>
+    </string-array>
 </resources>

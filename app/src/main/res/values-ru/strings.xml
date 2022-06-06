@@ -53,7 +53,7 @@
     <string name="navbar_calendar">Календарь</string>
     <string name="navbar_settings">Настройки</string>
     <string name="navbar_guide">Справочник</string>
-    <string name="navbar_doc">Документация</string>
+    <string name="navbar_doc">Заявление</string>
     <string name="enter_message">Введите сообщение</string>
     <string name="Empty">Поле пустое</string>
     <string name="chat_clear_text">Чат очищен</string>
@@ -74,4 +74,9 @@
     <string name="about_dom_social">Социальные сети</string>
     <string name="about_dom_Location">Адрес общежития</string>
     <string name="dom_phone_number">Номер телефона</string>
+    <string name="add_events_text">Добавить событие</string>
+
+    <string name="service_call">Услуги</string>
+    <string name="phn_hint">Номер телефона</string>
+    <string name="navbar_services">Услуги</string>
 </resources>

@@ -33,7 +33,7 @@ class MListAdapter : RecyclerView.Adapter<MListAdapter.MainListHolder>() {
         val holder = MainListHolder(view)
         holder.itemView.setOnClickListener {
             when(listItems[holder.adapterPosition].type){
-                TYPE_CHAT ->replaceFragment(SChatFragment(listItems[holder.adapterPosition]))
+                TYPE_CHAT -> replaceFragment(SChatFragment(listItems[holder.adapterPosition]))
                 TYPE_GROUP -> replaceFragment(GChatFragment(listItems[holder.adapterPosition]))
             }
         }

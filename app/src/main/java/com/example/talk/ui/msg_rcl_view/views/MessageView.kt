@@ -1,5 +1,7 @@
 package com.example.talk.ui.msg_rcl_view.views
 
+//view message
+
 interface MessageView {
 
     val id: String

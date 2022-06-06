@@ -9,7 +9,6 @@ data class CommonModel(
     var state: String = "",
     var photoUrl: String = "empty",
 
-
     //message
     var text: String = "",
     var type: String = "",
@@ -24,7 +23,6 @@ data class CommonModel(
     override fun equals(other: Any?): Boolean {
         return (other as CommonModel).id == id
     }
-
 }
 
 

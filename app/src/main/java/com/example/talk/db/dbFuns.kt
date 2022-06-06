@@ -89,8 +89,7 @@ fun sendMessage(message: String, otherUserID: String, typeText: String, function
     val messageKey = REF_DATABASE_ROOT.child(refDialogUser).push().key
 
     val mapMessage = hashMapOf<String, Any>()
-    mapMessage[CHILD_FROM] =
-        CURRENT_UID
+    mapMessage[CHILD_FROM] = CURRENT_UID
     mapMessage[CHILD_TYPE] = typeText
     mapMessage[CHILD_TEXT] = message
     mapMessage[CHILD_ID] = messageKey.toString()
@@ -320,8 +319,7 @@ fun sendMessageToGroup(message: String, groupID: String, typeText: String, funct
     val messageKey = REF_DATABASE_ROOT.child(refMessages).push().key
 
     val mapMessage = hashMapOf<String, Any>()
-    mapMessage[CHILD_FROM] =
-        CURRENT_UID
+    mapMessage[CHILD_FROM] = CURRENT_UID
     mapMessage[CHILD_TYPE] = typeText
     mapMessage[CHILD_TEXT] = message
     mapMessage[CHILD_ID] = messageKey.toString()

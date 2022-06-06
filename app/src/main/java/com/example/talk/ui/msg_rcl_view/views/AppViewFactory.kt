@@ -5,6 +5,7 @@ import com.example.talk.utilits.TYPE_MESSAGE_FILE
 import com.example.talk.utilits.TYPE_MESSAGE_IMAGE
 import com.example.talk.utilits.TYPE_MESSAGE_VOICE
 
+//type message
 class AppViewFactory {
     companion object{
         fun getView(message: CommonModel):MessageView{

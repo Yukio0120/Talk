@@ -79,7 +79,7 @@ class GChatFragment(private val group: CommonModel) :
         chat_btn_attach.setOnClickListener { attach() }
 
         CoroutineScope(Dispatchers.IO).launch {
-            chat_btn_voice.setOnTouchListener { v, event ->
+            chat_btn_voice.setOnTouchListener { _, event ->
                 if (checkPermission(RECORD_AUDIO)) {
                     if (event.action == MotionEvent.ACTION_DOWN) {
                         //TODO record
@@ -228,6 +228,7 @@ class GChatFragment(private val group: CommonModel) :
         mToolbarInfo.toolbar_chat_status.text = mReceivingUser.state
     }
 
+    @Deprecated("Deprecated in Java")
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         /* Активность которая запускается для получения картинки для фото пользователя */
         super.onActivityResult(requestCode, resultCode, data)

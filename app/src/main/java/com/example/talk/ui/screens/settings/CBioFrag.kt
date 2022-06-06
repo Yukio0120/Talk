@@ -18,5 +18,4 @@ class CBioFrag : BCFrag(R.layout.fragment_c_bio) {
         setBioToDb(newBio)
     }
 
-
 }

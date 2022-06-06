@@ -84,7 +84,7 @@ class SChatFragment(private val contact: CommonModel) :
         chat_btn_attach.setOnClickListener { attach() }
 
         CoroutineScope(Dispatchers.IO).launch {
-            chat_btn_voice.setOnTouchListener { v, event ->
+            chat_btn_voice.setOnTouchListener { _, event ->
                 if (checkPermission(RECORD_AUDIO)) {
                     if (event.action == MotionEvent.ACTION_DOWN) {
                         //record

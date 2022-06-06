@@ -33,5 +33,4 @@ class CNameFrag : BCFrag(R.layout.fragment_change_name) {
         }
     }
 
-
 }
