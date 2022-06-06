@@ -112,7 +112,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-
         <Spinner
             android:id="@+id/service_user_choice"
             android:layout_width="0dp"
